@@ -1,0 +1,2252 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "text": "Which hormone is secreted by the adrenal medulla to initiate the \"fight-or-flight\" response?",
+      "options": {
+        "A": "Cortisol",
+        "B": "Aldosterone",
+        "C": "Epinephrine",
+        "D": "Glucagon"
+      },
+      "correctAnswer": "C",
+      "explanation": "The adrenal medulla secretes epinephrine (adrenaline) and noradrenaline, which are emergency hormones responsible for the 'Fight or Flight' response. They increase heart rate, respiration, and glucose availability. Cortisol is from adrenal cortex, aldosterone regulates electrolytes, glucagon raises blood sugar from pancreas."
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "text": "Which of the following underground plant parts is classified as a modified root?",
+      "options": {
+        "A": "Potato",
+        "B": "Onion",
+        "C": "Sweet potato",
+        "D": "Ginger"
+      },
+      "correctAnswer": "C",
+      "explanation": "Sweet potato is a modified adventitious root that stores food. Potato is a modified stem (tuber), onion is a modified stem (bulb), ginger is a modified stem (rhizome). Roots lack nodes and internodes."
+    },
+    {
+      "id": 3,
+      "type": "statements",
+      "question": "Consider the following statements regarding the regulation of blood glucose in the human body. Which of the statements given above is/are incorrect?",
+      "statements": [
+        "Insulin is a hormone produced by the pancreas that reduces the concentration of glucose in the blood.",
+        "Glucagon is a hormone that triggers the liver to convert stored glycogen back into glucose."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "D",
+      "explanation": "Both statements are correct. Insulin lowers blood glucose, glucagon raises blood glucose by stimulating glycogen breakdown. Thus neither statement is incorrect."
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "text": "Which tissue layer forms the fleshy edible portion of a ripe mango?",
+      "options": {
+        "A": "Outermost epicarp",
+        "B": "Middle mesocarp",
+        "C": "Innermost endocarp",
+        "D": "Swollen thalamus"
+      },
+      "correctAnswer": "B",
+      "explanation": "In mango, the fruit wall (pericarp) differentiates into epicarp (skin), mesocarp (fleshy edible part), and endocarp (hard stone around seed). Thalamus is not involved; mango is a true fruit."
+    },
+    {
+      "id": 5,
+      "type": "statements",
+      "question": "Consider the following statements regarding the human blood group systems. Which of the statements given above are correct?",
+      "statements": [
+        "The ABO blood group system is determined by the presence or absence of two surface antigens on the membrane of red blood cells.",
+        "Individuals with blood group 'O' possess both anti-A and anti-B antibodies in their plasma."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "C",
+      "explanation": "Both statements are correct. ABO system is based on A and B antigens. Group O lacks both antigens but has both anti-A and anti-B antibodies."
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "text": "Which of the following is the defining technological characteristic of \"Web 3.0\"?",
+      "options": {
+        "A": "Read-only, static HTML webpages.",
+        "B": "Centralised user-generated content and social media platforms.",
+        "C": "Decentralised networks based on blockchain technology.",
+        "D": "Exclusive reliance on centralised cloud computing servers."
+      },
+      "correctAnswer": "C",
+      "explanation": "Web 3.0 is built on decentralisation using blockchain, giving users control over data. Web 1.0 was static, Web 2.0 is centralised user-generated content."
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "text": "The clinical condition arising due to immunological destruction of foetal erythrocytes when an Rh-negative mother carries an Rh-positive foetus is known as:",
+      "options": {
+        "A": "Haemophilia",
+        "B": "Erythroblastosis foetalis",
+        "C": "Sickle cell anaemia",
+        "D": "Thalassemia"
+      },
+      "correctAnswer": "B",
+      "explanation": "Erythroblastosis foetalis occurs due to Rh incompatibility where an Rh-negative mother produces anti-Rh antibodies that destroy foetal red blood cells."
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "text": "Which of the following is not a tool or technology primarily utilised for targeted genome editing?",
+      "options": {
+        "A": "Zinc Finger Nucleases",
+        "B": "Transcription Activator-Like Effector Nucleases",
+        "C": "Homing Endonucleases",
+        "D": "Reverse Transcription Polymerase Chain Reaction"
+      },
+      "correctAnswer": "D",
+      "explanation": "Reverse Transcription PCR is a technique to amplify RNA, not for targeted genome editing. ZFNs, TALENs, and homing endonucleases are used for precise DNA cuts."
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "text": "What is the primary role of Vitamin K in the blood clotting cascade?",
+      "options": {
+        "A": "Synthesis of fibrin at the site of injury",
+        "B": "Synthesis of prothrombin in the liver",
+        "C": "Formation of platelets in the bone marrow",
+        "D": "Production of heparin in blood vessels"
+      },
+      "correctAnswer": "B",
+      "explanation": "Vitamin K is essential for the synthesis of prothrombin (Factor II) and other clotting factors (VII, IX, X) in the liver. It does not directly form fibrin or platelets."
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "text": "What is the primary mechanism by which guard cells regulate the opening and closing of stomatal pores?",
+      "options": {
+        "A": "Alteration of turgor pressure through the movement of water into and out of the cells",
+        "B": "Dynamic change in the thickness of the outer cell walls to block the pore",
+        "C": "Secretion of a waxy cuticle over the pore during periods of high temperature",
+        "D": "Expansion and contraction of xylem vessels beneath the epidermis"
+      },
+      "correctAnswer": "A",
+      "explanation": "Guard cells open stomata when turgid (water enters) and close when flaccid (water exits). This is driven by osmotic changes, primarily potassium ion movement."
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "text": "In the human nervous system, the fluid-filled gap separating the presynaptic and postsynaptic membranes at a chemical synapse is known as:",
+      "options": {
+        "A": "Synaptic cleft",
+        "B": "Node of Ranvier",
+        "C": "Synaptic knob",
+        "D": "Motor end plate"
+      },
+      "correctAnswer": "A",
+      "explanation": "The synaptic cleft is the fluid-filled space between presynaptic and postsynaptic neurons across which neurotransmitters diffuse."
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "text": "Which of the following organisms serves as the primary vector for transmission of Cucumber Mosaic Virus (CMV)?",
+      "options": {
+        "A": "Whiteflies",
+        "B": "Root-knot nematodes",
+        "C": "Aphids",
+        "D": "Fungal zoospores"
+      },
+      "correctAnswer": "C",
+      "explanation": "CMV is transmitted primarily by aphids in a non-persistent manner. Whiteflies transmit begomoviruses, nematodes transmit nepoviruses, fungi transmit soil-borne viruses."
+    },
+    {
+      "id": 13,
+      "type": "assertion_reason",
+      "assertion": "DNA fingerprinting used in forensic investigations primarily analyses protein-coding regions of the human genome.",
+      "reason": "Protein-coding regions of human DNA are highly conserved and show minimal variation among individuals.",
+      "options": {
+        "A": "Both (A) and (R) are correct, and (R) is the correct explanation of (A).",
+        "B": "Both (A) and (R) are correct, but (R) is not the correct explanation of (A).",
+        "C": "(A) is correct, but (R) is not correct.",
+        "D": "(A) is not correct, but (R) is correct."
+      },
+      "correctAnswer": "D",
+      "explanation": "Assertion is false: DNA fingerprinting uses non-coding regions (introns) with high variability. Reason is true: coding regions are highly conserved. So (A) false, (R) true."
+    },
+    {
+      "id": 14,
+      "type": "statements",
+      "question": "Consider the following pairs of Lymphoid Organs and their biological characteristics. How many pairs are correctly matched?",
+      "statements": [
+        "Bone Marrow – Primary lymphoid organ",
+        "Spleen – Primary site for lymphocyte formation",
+        "Thymus – Site of T-lymphocyte maturation",
+        "Lymph Nodes – Traps blood-borne microorganisms"
+      ],
+      "options": {
+        "A": "Only one pair",
+        "B": "Only two pairs",
+        "C": "Only three pairs",
+        "D": "All four pairs"
+      },
+      "correctAnswer": "B",
+      "explanation": "Correct pairs: 1 (bone marrow primary), 3 (thymus for T-cell maturation). Incorrect: spleen is secondary lymphoid organ, not primary site for lymphocyte formation; lymph nodes trap microorganisms from lymph, not directly from blood."
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "text": "What is the primary function of site-directed nucleases (SDNs) in modern biotechnology?",
+      "options": {
+        "A": "Transport foreign genetic material into cells as vectors",
+        "B": "Induce targeted breaks in the genome for precise genetic modification",
+        "C": "Synthesise artificial proteins directly from messenger RNA",
+        "D": "Amplify specific DNA segments during the polymerase chain reaction"
+      },
+      "correctAnswer": "B",
+      "explanation": "SDNs (including CRISPR-Cas9, TALENs, ZFNs) create double-strand breaks at specific DNA sequences, enabling gene editing via cellular repair mechanisms."
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "text": "Which of the following represents the correct proximal-to-distal sequence of the regions of the human alimentary canal immediately after the stomach?",
+      "options": {
+        "A": "Duodenum → Jejunum → Ileum → Caecum → Colon → Rectum",
+        "B": "Jejunum → Duodenum → Ileum → Caecum → Colon → Rectum",
+        "C": "Duodenum → Ileum → Jejunum → Colon → Caecum → Rectum",
+        "D": "Duodenum → Jejunum → Ileum → Colon → Caecum → Rectum"
+      },
+      "correctAnswer": "A",
+      "explanation": "After stomach, the order is duodenum (first part of small intestine), jejunum, ileum, then caecum (beginning of large intestine), colon, rectum."
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "text": "Which of the following statements describes organ-on-a-chip technology in modern biotechnology?",
+      "options": {
+        "A": "It is a surgically implantable microchip designed to monitor real-time organ function in patients",
+        "B": "It is an artificial intelligence platform used exclusively for sequencing organ-specific pathogens",
+        "C": "It is a synthetic full-scale artificial organ developed for permanent human transplantation",
+        "D": "It is a microfluidic cell culture system that simulates the physiological and biomechanical functions of human organs"
+      },
+      "correctAnswer": "D",
+      "explanation": "Organ-on-a-chip is a microfluidic device with living human cells cultured in 3D to mimic organ microenvironments, used for drug testing and disease modeling."
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "text": "Which part of the human brain is primarily responsible for regulating body temperature, hunger, and maintaining internal homeostasis?",
+      "options": {
+        "A": "Cerebellum",
+        "B": "Medulla oblongata",
+        "C": "Hypothalamus",
+        "D": "Thalamus"
+      },
+      "correctAnswer": "C",
+      "explanation": "Hypothalamus acts as the body's thermostat and controls hunger, thirst, sleep, and links nervous to endocrine system."
+    },
+    {
+      "id": 19,
+      "type": "mcq",
+      "text": "Which of the following fundamental principles of quantum mechanics enables a qubit to represent both 0 and 1 simultaneously?",
+      "options": {
+        "A": "Quantum entanglement",
+        "B": "Quantum superposition",
+        "C": "Quantum tunnelling",
+        "D": "Quantum decoherence"
+      },
+      "correctAnswer": "B",
+      "explanation": "Quantum superposition allows a qubit to exist in multiple states at once, enabling parallel computation."
+    },
+    {
+      "id": 20,
+      "type": "statements",
+      "question": "Consider the following statements regarding the antagonistic mechanics of the biceps and triceps muscles. Which of the statements given above is/are correct?",
+      "statements": [
+        "Skeletal muscles like the biceps and triceps facilitate movement exclusively by exerting a pulling force on the bones.",
+        "During the flexion of the arm at the elbow joint, the biceps muscle acts as the antagonist and undergoes relaxation."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "A",
+      "explanation": "Statement 1 is correct: muscles only pull, never push. Statement 2 is incorrect: during flexion, biceps is agonist (contracts), triceps is antagonist (relaxes)."
+    },
+    {
+      "id": 21,
+      "type": "assertion_reason",
+      "assertion": "The continuous column of water within the xylem of tall trees does not break under its own weight.",
+      "reason": "Evaporation of water from leaf stomata creates a strong negative pressure or suction pull in the xylem.",
+      "options": {
+        "A": "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "C": "(A) is true, but (R) is false.",
+        "D": "(A) is false, but (R) is true."
+      },
+      "correctAnswer": "B",
+      "explanation": "Both true, but (R) does not explain why column doesn't break. The column remains intact due to cohesion and adhesion of water molecules (tensile strength)."
+    },
+    {
+      "id": 22,
+      "type": "statements",
+      "question": "Consider the following statements regarding the properties and cellular composition of human cartilage. Which of the statements given above are incorrect?",
+      "statements": [
+        "The solid intercellular material of cartilage resists mechanical compression.",
+        "Chondrocytes are freely suspended in a liquid extracellular matrix without any enclosing cavities.",
+        "Cartilage tissue contains a dense network of internal blood vessels.",
+        "Cartilage forms the structural framework of the human outer ear."
+      ],
+      "options": {
+        "A": "Only 1 and 4",
+        "B": "Only 2 and 3",
+        "C": "Only 1 and 2",
+        "D": "1, 2, 3 and 4"
+      },
+      "correctAnswer": "B",
+      "explanation": "Incorrect statements: 2 (chondrocytes are enclosed in lacunae, not freely suspended), 3 (cartilage is avascular). Statements 1 and 4 are correct."
+    },
+    {
+      "id": 23,
+      "type": "mcq",
+      "text": "Which of the following fruits is a false fruit?",
+      "options": {
+        "A": "Banana",
+        "B": "Cashew",
+        "C": "Papaya",
+        "D": "Grape"
+      },
+      "correctAnswer": "B",
+      "explanation": "Cashew apple is a false fruit developed from pedicel and thalamus; the actual fruit is the nut. Banana, papaya, grape are true fruits from ovary."
+    },
+    {
+      "id": 24,
+      "type": "mcq",
+      "text": "What medium does Li-Fi primarily use to transmit data?",
+      "options": {
+        "A": "Radio waves",
+        "B": "Visible light",
+        "C": "Microwaves",
+        "D": "Sound waves"
+      },
+      "correctAnswer": "B",
+      "explanation": "Li-Fi (Light Fidelity) uses visible light spectrum via LED bulbs, offering high bandwidth and security as light cannot penetrate walls."
+    },
+    {
+      "id": 25,
+      "type": "mcq",
+      "text": "The upper dorsal surface of the human tongue bears small anatomical projections known as:",
+      "options": {
+        "A": "Microvilli",
+        "B": "Papillae",
+        "C": "Rugae",
+        "D": "Villi"
+      },
+      "correctAnswer": "B",
+      "explanation": "Papillae are projections on tongue that house taste buds. Microvilli are on intestinal cells, rugae are stomach folds, villi are in small intestine."
+    },
+    {
+      "id": 26,
+      "type": "mcq",
+      "text": "What does the acronym CAR stand for in CAR T-cell therapy?",
+      "options": {
+        "A": "Cytotoxic Antibody Response",
+        "B": "Cloned Antigen Recognition",
+        "C": "Combined Autoimmune Reaction",
+        "D": "Chimeric Antigen Receptor"
+      },
+      "correctAnswer": "D",
+      "explanation": "CAR stands for Chimeric Antigen Receptor. These synthetic receptors are engineered on T-cells to target specific cancer antigens."
+    },
+    {
+      "id": 27,
+      "type": "statements",
+      "question": "Consider the following statements regarding the human digestive system. Which of the statements given above is/are correct?",
+      "statements": [
+        "The gallbladder actively synthesises bile juice to facilitate the emulsification of dietary fats.",
+        "The duodenum receives bile and pancreatic secretions simultaneously through the hepatopancreatic duct."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "B",
+      "explanation": "Statement 1 incorrect: bile is synthesised in liver, gallbladder stores and concentrates it. Statement 2 correct: hepato-pancreatic duct (ampulla of Vater) delivers both to duodenum."
+    },
+    {
+      "id": 28,
+      "type": "mcq",
+      "text": "Which specific cells of the gastric glands in the human stomach are responsible for the secretion of Hydrochloric Acid (HCl)?",
+      "options": {
+        "A": "Peptic cells",
+        "B": "Mucus neck cells",
+        "C": "Parietal cells",
+        "D": "Goblet cells"
+      },
+      "correctAnswer": "C",
+      "explanation": "Parietal (oxyntic) cells secrete HCl and intrinsic factor. Peptic cells secrete pepsinogen, mucus neck cells secrete mucus, goblet cells are in intestine."
+    },
+    {
+      "id": 29,
+      "type": "statements",
+      "question": "Consider the following statements regarding Mitochondrial Diseases. Which of the statements given above are correct?",
+      "statements": [
+        "Mitochondrial DNA is typically inherited solely through the maternal line.",
+        "These disorders impair cellular ATP production and predominantly affect organs with high energy demand, such as the brain, heart and skeletal muscles.",
+        "Mitochondrial Replacement Therapy is used to completely cure affected adult patients with mitochondrial genetic defects."
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 2",
+        "C": "Only 2 and 3",
+        "D": "1, 2 and 3"
+      },
+      "correctAnswer": "A",
+      "explanation": "Statements 1 and 2 correct. Statement 3 incorrect: MRT is an IVF technique to prevent transmission, not cure affected adults."
+    },
+    {
+      "id": 30,
+      "type": "statements",
+      "question": "Consider the following statements regarding endocrine and exocrine glands. Which of the statements given above is/are correct?",
+      "statements": [
+        "Endocrine glands release their secretions directly into the extracellular fluid surrounding the gland owing to the absence of ducts.",
+        "Exocrine glands discharge substances such as mucus, earwax and digestive enzymes through a duct system."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "C",
+      "explanation": "Both statements correct. Endocrine glands are ductless, exocrine glands have ducts."
+    },
+    {
+      "id": 31,
+      "type": "statements",
+      "question": "Consider the following statements regarding stem cells. Which of the statements given above are correct?",
+      "statements": [
+        "Embryonic stem cells are pluripotent and can differentiate into nearly all specialised cell types of the human body.",
+        "Induced pluripotent stem cells are naturally obtained from the umbilical cord and placenta after birth.",
+        "Adult stem cells are generally multipotent and are usually restricted to differentiating into cell types of their resident tissue."
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 1 and 3",
+        "C": "Only 2 and 3",
+        "D": "1, 2 and 3"
+      },
+      "correctAnswer": "B",
+      "explanation": "Statements 1 and 3 correct. Statement 2 incorrect: iPSCs are artificially created in lab from adult somatic cells, not naturally obtained."
+    },
+    {
+      "id": 32,
+      "type": "mcq",
+      "text": "Which of the following statements regarding an organism's phenome is incorrect?",
+      "options": {
+        "A": "It comprises the complete set of observable physical, behavioural and biochemical traits of an organism",
+        "B": "Unlike the relatively stable genome, the phenome is dynamic and may change over the lifespan of the organism",
+        "C": "It is determined by the organism's DNA sequence and remains independent of environmental influences",
+        "D": "It represents the observable outcome of the interaction between the genome, epigenetic factors and the environment"
+      },
+      "correctAnswer": "C",
+      "explanation": "Statement C is incorrect because the phenome is influenced by environment; it is not independent of environmental factors."
+    },
+    {
+      "id": 33,
+      "type": "mcq",
+      "text": "The pituitary gland in humans is lodged within which of the following bony cavities of the skull?",
+      "options": {
+        "A": "Foramen magnum",
+        "B": "Sella turcica",
+        "C": "Cribriform plate",
+        "D": "Mandibular fossa"
+      },
+      "correctAnswer": "B",
+      "explanation": "Pituitary gland sits in the sella turcica of the sphenoid bone."
+    },
+    {
+      "id": 34,
+      "type": "mcq",
+      "text": "Which of the following parts of the plant yields the spice known as 'clove'?",
+      "options": {
+        "A": "Dried seeds",
+        "B": "Dried unopened flower buds",
+        "C": "Inner aromatic bark",
+        "D": "Dried aril surrounding the seed"
+      },
+      "correctAnswer": "B",
+      "explanation": "Cloves are the dried unopened flower buds of Syzygium aromaticum."
+    },
+    {
+      "id": 35,
+      "type": "mcq",
+      "text": "Which of the following best describes a \"biosensor\" in modern medical technology?",
+      "options": {
+        "A": "A wearable electronic strap used to monitor external physical movement and resting heart rate.",
+        "B": "An analytical device that combines a biological recognition element with a physical detector to measure a specific chemical or biomarker.",
+        "C": "A genetically engineered virus is utilised to deliver therapeutic drugs directly into targeted cancer cells.",
+        "D": "A purely software-based algorithm designed to predict the spread of infectious diseases in a population."
+      },
+      "correctAnswer": "B",
+      "explanation": "A biosensor uses a biological element (enzyme, antibody) and a detector to convert biological response into an electrical signal."
+    },
+    {
+      "id": 36,
+      "type": "mcq",
+      "text": "What is the primary physiological consequence of a chronic deficiency of dietary iodine in human adults?",
+      "options": {
+        "A": "Hypoglycemia and abnormal enlargement of the pancreas",
+        "B": "Hypothyroidism and abnormal enlargement of the thyroid gland",
+        "C": "Hyperthyroidism and physical protrusion of the eyeballs",
+        "D": "Hypocalcemia and sustained tetany of the skeletal muscles"
+      },
+      "correctAnswer": "B",
+      "explanation": "Iodine deficiency reduces thyroid hormone production (hypothyroidism), causing compensatory enlargement of thyroid (goitre)."
+    },
+    {
+      "id": 37,
+      "type": "mcq",
+      "text": "What best describes the process of osmosis during water absorption by plant roots?",
+      "options": {
+        "A": "Movement of water from a region of higher water potential in the soil to a lower water potential in root cells through a selectively permeable membrane",
+        "B": "Active transport of water molecules by the expenditure of ATP against their concentration gradient",
+        "C": "Movement of dissolved mineral salts from the soil into root hairs through freely permeable cell walls",
+        "D": "Physical absorption of water by hydrophilic particles in root cell walls without solution formation"
+      },
+      "correctAnswer": "A",
+      "explanation": "Osmosis is passive movement of water from higher water potential to lower water potential across a semipermeable membrane."
+    },
+    {
+      "id": 38,
+      "type": "mcq",
+      "text": "Which of the following is NOT a constituent component of human blood plasma?",
+      "options": {
+        "A": "Albumin",
+        "B": "Haemoglobin",
+        "C": "Fibrinogen",
+        "D": "Electrolytes"
+      },
+      "correctAnswer": "B",
+      "explanation": "Haemoglobin is inside red blood cells, not in plasma. Plasma contains albumin, fibrinogen, electrolytes, etc."
+    },
+    {
+      "id": 39,
+      "type": "statements",
+      "question": "Which of the following pairs regarding specialised plant adaptations and the associated environmental stress are correctly matched?",
+      "statements": [
+        "Carnivorous trapping mechanisms: Nitrogen deficiency in nutrient-poor soils",
+        "Pneumatophores: Oxygen deficiency in waterlogged soils",
+        "Symbiotic root nodules: Potassium deficiency in sandy soils"
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 2 and 3",
+        "C": "Only 1 and 3",
+        "D": "1,2 and 3"
+      },
+      "correctAnswer": "A",
+      "explanation": "Pairs 1 and 2 correct. Pair 3 incorrect: root nodules fix nitrogen, not potassium."
+    },
+    {
+      "id": 40,
+      "type": "statements",
+      "question": "Consider the following statements regarding the primary female sex hormones. Which of the statements given above is/are correct?",
+      "statements": [
+        "The growing ovarian follicles primarily synthesise and secrete the steroid hormone estrogen.",
+        "The corpus luteum secretes progesterone to stimulate the appearance of female secondary sexual characteristics."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "A",
+      "explanation": "Statement 1 correct: estrogen from follicles. Statement 2 incorrect: progesterone prepares uterus for pregnancy; secondary sexual characteristics are stimulated by estrogen."
+    },
+    {
+      "id": 41,
+      "type": "statements",
+      "question": "Which of the following pairs regarding artificial intelligence terminology and their descriptions are correctly matched? How many pairs are correctly matched?",
+      "statements": [
+        "Machine Learning: Algorithms that enable computer systems to learn from data and improve performance without explicit programming",
+        "Natural Language Processing: Specialised hardware and microchips used to accelerate AI model training",
+        "Large Language Models: Deep learning systems trained on massive datasets to understand and generate human language",
+        "Generative Pre-trained Transformer: Neural network architecture based on the self-attention mechanism for parallel sequence processing"
+      ],
+      "options": {
+        "A": "Only one pair",
+        "B": "Only two pairs",
+        "C": "Only three pairs",
+        "D": "All four pairs"
+      },
+      "correctAnswer": "C",
+      "explanation": "Correct: 1, 3, 4. Pair 2 is incorrect: NLP is about understanding language, not hardware."
+    },
+    {
+      "id": 42,
+      "type": "statements",
+      "question": "Consider the following statements regarding the human pancreas. Which of the statements given above are correct?",
+      "statements": [
+        "The pancreas is a composite gland situated between the limbs of the C-shaped duodenum.",
+        "The exocrine portion of the pancreas secretes an alkaline pancreatic juice containing enzymes.",
+        "The islets of Langerhans represent the endocrine part and consist of alpha-cells and beta-cells."
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 2 and 3",
+        "C": "Only 1 and 3",
+        "D": "1,2 and 3"
+      },
+      "correctAnswer": "D",
+      "explanation": "All three statements correct. Pancreas is heterocrine, exocrine acini secrete digestive enzymes, islets secrete insulin and glucagon."
+    },
+    {
+      "id": 43,
+      "type": "statements",
+      "question": "Which of the following areas represent primary applications of quantum technology?",
+      "statements": [
+        "Secure data transmission using Quantum Key Distribution",
+        "Simulation of molecular interactions for drug discovery",
+        "Precision navigation in GPS-denied environments using quantum sensors",
+        "Execution of autonomous smart contracts on decentralised networks",
+        "Optimisation of large-scale logistics and financial systems"
+      ],
+      "options": {
+        "A": "Only 1, 2, 3 and 5",
+        "B": "Only 1, 3, 4 and 5",
+        "C": "Only 2, 3 and 4",
+        "D": "1, 2, 3, 4 and 5"
+      },
+      "correctAnswer": "A",
+      "explanation": "Quantum applications include QKD, simulation, quantum sensors, optimisation. Autonomous smart contracts are Web 3.0, not quantum technology."
+    },
+    {
+      "id": 44,
+      "type": "mcq",
+      "text": "Which of the following blood groups is regarded as the universal recipient?",
+      "options": {
+        "A": "O negative",
+        "B": "AB negative",
+        "C": "O positive",
+        "D": "AB positive"
+      },
+      "correctAnswer": "D",
+      "explanation": "AB positive has A, B, Rh antigens, no antibodies, so can receive any blood type."
+    },
+    {
+      "id": 45,
+      "type": "mcq",
+      "text": "What is the botanical term for the stalk that connects the leaf blade to the stem?",
+      "options": {
+        "A": "Pedicel",
+        "B": "Petiole",
+        "C": "Peduncle",
+        "D": "Stipule"
+      },
+      "correctAnswer": "B",
+      "explanation": "Petiole attaches leaf blade to stem. Pedicel is flower stalk, peduncle is inflorescence stalk, stipules are appendages at base of petiole."
+    },
+    {
+      "id": 46,
+      "type": "statements",
+      "question": "Consider the following statements regarding the reflex arc. Which of the statements given above is/are incorrect?",
+      "statements": [
+        "A reflex arc is the neural pathway involved in an involuntary and immediate response to a stimulus.",
+        "The sensory neuron transmits impulses from the receptor to the central nervous system.",
+        "The motor neuron carries impulses from the spinal cord to the effector organ."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2 and 3",
+        "C": "Only 3",
+        "D": "None of the above"
+      },
+      "correctAnswer": "D",
+      "explanation": "All three statements are correct. Reflex arc involves sensory, relay, motor neurons."
+    },
+    {
+      "id": 47,
+      "type": "mcq",
+      "text": "Which of the following best explains the release of carbon dioxide by plants during the night?",
+      "options": {
+        "A": "Photosynthesis ceases in the absence of light, while cellular respiration continues to release carbon dioxide",
+        "B": "Plants undergo reverse photosynthesis during darkness to expel excess carbon dioxide",
+        "C": "Guard cells actively remove accumulated carbon dioxide from leaf tissues during the night",
+        "D": "Low nighttime temperature shifts plant metabolism towards oxygen consumption and carbon dioxide release"
+      },
+      "correctAnswer": "A",
+      "explanation": "At night, photosynthesis stops but respiration continues, releasing CO2."
+    },
+    {
+      "id": 48,
+      "type": "statements",
+      "question": "Which of the following statements regarding the nutritional composition of bovine milk are correct?",
+      "statements": [
+        "Bovine milk is regarded as a nearly complete food but is deficient in iron.",
+        "Dairy milk is a significant primary dietary source of Vitamin C.",
+        "Milk contains high-quality proteins, including casein and whey proteins."
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 2 and 3",
+        "C": "Only 1 and 3",
+        "D": "1,2 and 3"
+      },
+      "correctAnswer": "C",
+      "explanation": "Statements 1 and 3 correct. Statement 2 incorrect: milk is poor in Vitamin C."
+    },
+    {
+      "id": 49,
+      "type": "statements",
+      "question": "Consider the following statements regarding angiosperms and gymnosperms. Which of the statements given above is/are correct?",
+      "statements": [
+        "Gymnosperms generally lack vessels in xylem and companion cells in phloem, which are characteristic features of angiosperms.",
+        "In angiosperms, endosperm is typically triploid and formed after double fertilisation, whereas in gymnosperms, the nutritive tissue is haploid and develops before fertilisation."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "C",
+      "explanation": "Both statements correct. Gymnosperms lack vessels and companion cells; their endosperm is haploid female gametophyte."
+    },
+    {
+      "id": 50,
+      "type": "statements",
+      "question": "Consider the following statements regarding the central nervous system. Which of the statements given above is/are correct?",
+      "statements": [
+        "The cerebrum is the major thinking part of the brain and serves as the seat of intelligence and memory.",
+        "The cerebellum is responsible for maintaining the posture and balance of the body during voluntary activities."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "C",
+      "explanation": "Both statements correct. Cerebrum controls thinking, memory; cerebellum coordinates balance and posture."
+    },
+    {
+      "id": 51,
+      "type": "mcq",
+      "text": "Which botanical term describes seed germination while the seed remains attached to the parent plant, as seen in many mangrove species?",
+      "options": {
+        "A": "Apomixis",
+        "B": "Cleistogamy",
+        "C": "Parthenocarpy",
+        "D": "Vivipary"
+      },
+      "correctAnswer": "D",
+      "explanation": "Vivipary is germination of seed while still attached to parent plant, common in mangroves."
+    },
+    {
+      "id": 52,
+      "type": "statements",
+      "question": "Which of the following statements are correct regarding Viruses?",
+      "statements": [
+        "Viruses are acellular entities that do not possess a cytoplasm or cellular organelles.",
+        "Outside a living host, viruses exist as inert crystalline structures with no metabolic activity.",
+        "A single virus particle contains both DNA and RNA simultaneously to facilitate replication.",
+        "Bacteriophages are a specific category of viruses that infect and replicate within bacteria."
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 1, 2 and 4",
+        "C": "Only 2, 3 and 4",
+        "D": "1, 2, 3 and 4"
+      },
+      "correctAnswer": "B",
+      "explanation": "Statements 1,2,4 correct. Statement 3 incorrect: viruses contain either DNA or RNA, not both."
+    },
+    {
+      "id": 53,
+      "type": "statements",
+      "question": "Consider the following statements regarding light absorption by photosynthetic pigments. Which of the statements given above are correct?",
+      "statements": [
+        "Chlorophyll pigments exhibit their maximum light absorption efficiency in the blue and red regions of the spectrum.",
+        "Plant leaves appear green primarily because chlorophyll molecules strongly absorb the green wavelengths of light.",
+        "The action spectrum of photosynthesis corresponds very closely to the absorption spectrum of chlorophyll 'a'."
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 2 and 3",
+        "C": "Only 1 and 3",
+        "D": "1, 2 and 3"
+      },
+      "correctAnswer": "C",
+      "explanation": "Statements 1 and 3 correct. Statement 2 incorrect: leaves appear green because green light is reflected, not absorbed."
+    },
+    {
+      "id": 54,
+      "type": "mcq",
+      "text": "Which of the following is the correct definition of pollination in flowering plants?",
+      "options": {
+        "A": "Fusion of a male gamete with the egg cell inside the ovary",
+        "B": "Transfer of pollen grains from the anther to the stigma of a pistil",
+        "C": "Growth of the pollen tube through the style towards the ovule",
+        "D": "Release of mature pollen grains from the microsporangium into the surrounding air"
+      },
+      "correctAnswer": "B",
+      "explanation": "Pollination is transfer of pollen from anther to stigma. Fertilisation is fusion of gametes."
+    },
+    {
+      "id": 55,
+      "type": "statements",
+      "question": "Consider the following statements regarding the human cardiovascular system and the mechanism of double circulation. Which of the statements given above is/are correct?",
+      "statements": [
+        "The opening between the right atrium and the right ventricle is guarded by the tricuspid valve.",
+        "Systemic circulation involves the transport of deoxygenated blood from the right ventricle to the lungs for oxygenation."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "A",
+      "explanation": "Statement 1 correct. Statement 2 incorrect: pulmonary circulation carries deoxygenated blood to lungs; systemic circulation carries oxygenated blood to body."
+    },
+    {
+      "id": 56,
+      "type": "mcq",
+      "text": "Which specific medical instrument is utilised to measure human arterial blood pressure?",
+      "options": {
+        "A": "Stethoscope",
+        "B": "Sphygmomanometer",
+        "C": "Electrocardiograph",
+        "D": "Spirometer"
+      },
+      "correctAnswer": "B",
+      "explanation": "Sphygmomanometer measures blood pressure. Stethoscope listens to heart sounds, ECG records electrical activity, spirometer measures lung volumes."
+    },
+    {
+      "id": 57,
+      "type": "statements",
+      "question": "Consider the following statements regarding the release of oxygen during photosynthesis. Which of the statements given above is/are correct?",
+      "statements": [
+        "The oxygen evolved by green plants originates from the splitting of water, not from carbon dioxide.",
+        "Cyanobacteria and purple sulphur bacteria both release oxygen as a by-product during their photosynthetic processes."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "A",
+      "explanation": "Statement 1 correct. Statement 2 incorrect: purple sulphur bacteria perform anoxygenic photosynthesis, using H2S and not releasing O2."
+    },
+    {
+      "id": 58,
+      "type": "statements",
+      "question": "Consider the following pairs regarding reproductive structures and their associated characteristics. Which of the pairs given above are correctly matched?",
+      "statements": [
+        "Zoospores: Motile, flagellated asexual spores commonly found in algae",
+        "Gemmae: Green, multicellular asexual reproductive bodies found in liverworts",
+        "Protonema: Free-living gametophyte stage in pteridophytes",
+        "Prothallus: Dominant diploid sporophyte body in mosses"
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 1 and 3",
+        "C": "Only 2 and 4",
+        "D": "1,2,3 and 4"
+      },
+      "correctAnswer": "A",
+      "explanation": "Pairs 1 and 2 correct. Pair 3 incorrect: protonema is in mosses (bryophytes), not pteridophytes. Pair 4 incorrect: prothallus is gametophyte in pteridophytes, not sporophyte in mosses."
+    },
+    {
+      "id": 59,
+      "type": "statements",
+      "question": "Consider the following statements regarding arteries and veins in the human circulatory system. Which of the statements given above is/are correct?",
+      "statements": [
+        "Arteries possess thick and elastic walls to withstand the high pressure of blood pumped from the heart.",
+        "Veins lack internal valves because blood within them flows under high pressure."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "A",
+      "explanation": "Statement 1 correct. Statement 2 incorrect: veins have valves and carry blood under low pressure."
+    },
+    {
+      "id": 60,
+      "type": "mcq",
+      "text": "Which of the following best distinguishes agentic AI from conventional generative AI systems?",
+      "options": {
+        "A": "It operates exclusively on decentralised blockchain networks for data privacy",
+        "B": "It can autonomously plan and execute a sequence of actions to achieve a defined objective with minimal human intervention",
+        "C": "It is a specialised hardware processor designed for quantum computing environments",
+        "D": "It cannot generate new content and is limited to classification tasks"
+      },
+      "correctAnswer": "B",
+      "explanation": "Agentic AI acts autonomously to plan and execute tasks without step-by-step prompts, unlike conventional generative AI."
+    },
+    {
+      "id": 61,
+      "type": "statements",
+      "question": "Which of the following statements regarding the functions of the plant stem is/are incorrect?",
+      "statements": [
+        "The stem bears leaves, flowers and fruits, providing structural support for exposure to sunlight.",
+        "It conducts water and minerals from the roots and transports prepared food to other plant parts.",
+        "Plant stems are exclusively aerial structures and are not modified for underground storage."
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 2",
+        "C": "Only 2 and 3",
+        "D": "Only 3"
+      },
+      "correctAnswer": "D",
+      "explanation": "Statements 1 and 2 correct. Statement 3 incorrect: stems can be modified for underground storage (e.g., potato tuber)."
+    },
+    {
+      "id": 62,
+      "type": "statements",
+      "question": "Consider the following statements regarding the respiratory volumes of the human lungs. Which of the statements given above is/are correct?",
+      "statements": [
+        "Tidal volume represents the volume of air inspired or expired during a normal, relaxed respiration.",
+        "Vital capacity represents the volume of air remaining in the lungs after a maximal forced expiration."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "A",
+      "explanation": "Statement 1 correct. Statement 2 incorrect: residual volume is air remaining after forced expiration; vital capacity is maximum air that can be exhaled after maximal inhalation."
+    },
+    {
+      "id": 63,
+      "type": "mcq",
+      "text": "Which of the following best describes the concept of 4D printing in additive manufacturing?",
+      "options": {
+        "A": "3D printing of structures using smart materials that can alter their shape or properties over time in response to external stimuli",
+        "B": "Simultaneous deposition of four distinct biomaterials for the fabrication of synthetic human organs",
+        "C": "A manufacturing technique using predictive temporal algorithms to eliminate defects during printing",
+        "D": "Integration of virtual reality mapping with conventional 3D printing for advanced spatial modelling"
+      },
+      "correctAnswer": "A",
+      "explanation": "4D printing uses smart materials that change shape over time (4th dimension) in response to stimuli like heat or moisture."
+    },
+    {
+      "id": 64,
+      "type": "match",
+      "question": "Match List-I with List-II:\nList-I (Satellite Orbit)\na. Low Earth Orbit (LEO)\nb. Sun-Synchronous Orbit (SSO)\nc. Medium Earth Orbit (MEO)\nd. Geostationary Orbit (GEO)\nList-II (Altitude)\n1. Between 600 and 800 km\n2. From 2,000 to 36,000 km\n3. Below 2,000 km (typically 160-2,000 km)\n4. 35,786 km",
+      "columnA": [
+        { "key": "a", "value": "Low Earth Orbit (LEO)" },
+        { "key": "b", "value": "Sun-Synchronous Orbit (SSO)" },
+        { "key": "c", "value": "Medium Earth Orbit (MEO)" },
+        { "key": "d", "value": "Geostationary Orbit (GEO)" }
+      ],
+      "columnB": [
+        { "key": "1", "value": "Between 600 and 800 km" },
+        { "key": "2", "value": "From 2,000 to 36,000 km" },
+        { "key": "3", "value": "Below 2,000 km (typically 160-2,000 km)" },
+        { "key": "4", "value": "35,786 km" }
+      ],
+      "options": {
+        "A": "a-2, b-3, c-4, d-1",
+        "B": "a-3, b-1, c-2, d-4",
+        "C": "a-2, b-1, c-3, d-4",
+        "D": "a-3, b-4, c-1, d-2"
+      },
+      "correctAnswer": "B",
+      "explanation": "LEO: <2000 km (3), SSO: 600-800 km (1), MEO: 2000-36000 km (2), GEO: 35786 km (4)."
+    },
+    {
+      "id": 65,
+      "type": "mcq",
+      "text": "Which of the following statements regarding Red Blood Cells (RBCs) and Haemoglobin is incorrect?",
+      "options": {
+        "A": "Haemoglobin is an iron-containing protein responsible for the characteristic red colour of human blood.",
+        "B": "The primary function of red blood cells is to transport oxygen from the lungs to various tissues of the body.",
+        "C": "Haemoglobin has a much higher binding affinity for oxygen than it does for carbon monoxide.",
+        "D": "Mature human red blood cells lack a nucleus, which provides more internal space to carry oxygen."
+      },
+      "correctAnswer": "C",
+      "explanation": "Statement C incorrect: Haemoglobin has about 200 times higher affinity for CO than O2, leading to carbon monoxide poisoning."
+    },
+    {
+      "id": 66,
+      "type": "mcq",
+      "text": "Which of the following is not a fundamental principle of Quantum Technology?",
+      "options": {
+        "A": "Quantum Superposition",
+        "B": "Quantum Entanglement",
+        "C": "Quantum Determinism",
+        "D": "Quantum Interference"
+      },
+      "correctAnswer": "C",
+      "explanation": "Quantum determinism is not a principle; quantum mechanics is probabilistic. Superposition, entanglement, interference are fundamental."
+    },
+    {
+      "id": 67,
+      "type": "statements",
+      "question": "Consider the following statements regarding the classification of human nutrients. Which of the statements given above is/are correct?",
+      "statements": [
+        "Macronutrients are required in large daily quantities primarily to provide calories and structural building blocks.",
+        "Micronutrients like vitamins and minerals are essential for body processes despite providing no caloric energy."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "C",
+      "explanation": "Both statements correct. Macronutrients (carbs, fats, proteins) provide energy; micronutrients (vitamins, minerals) are essential but calorie-free."
+    },
+    {
+      "id": 68,
+      "type": "statements",
+      "question": "Which of the following statements regarding transport mechanisms in higher plants are correct?",
+      "statements": [
+        "Xylem facilitates unidirectional transport of water and minerals by active expenditure of metabolic energy.",
+        "Phloem achieves bidirectional translocation of organic nutrients through ATP-dependent loading of sugars."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "B",
+      "explanation": "Statement 1 incorrect: xylem transport is passive (transpiration pull). Statement 2 correct: phloem loading requires ATP."
+    },
+    {
+      "id": 69,
+      "type": "statements",
+      "question": "Which of the following pairs regarding ISRO launch vehicles and their primary payload capabilities are correctly matched?",
+      "statements": [
+        "SSLV : Low Earth Orbit (up to 500 kg)",
+        "PSLV : Sun-synchronous polar orbit (up to 1,750 kg)",
+        "LVM3 : Geosynchronous Transfer Orbit (up to 4,000 kg)",
+        "GSLV Mk-II : Low Earth Orbit (up to 10,000 kg)"
+      ],
+      "options": {
+        "A": "A and B only",
+        "B": "B and C only",
+        "C": "A, B, and C",
+        "D": "A, B, C, and D"
+      },
+      "correctAnswer": "C",
+      "explanation": "A, B, C are correct. D incorrect: GSLV Mk-II capacity to GTO is ~2,500 kg, not 10,000 kg to LEO."
+    },
+    {
+      "id": 70,
+      "type": "mcq",
+      "text": "Which of the following is the primary physiological function of thrombocytes in the human circulatory system?",
+      "options": {
+        "A": "Transporting oxygen from the lungs to various body tissues",
+        "B": "Producing specific antibodies to fight off viral and bacterial infections",
+        "C": "Initiating the coagulation or clotting of blood at the site of an injury",
+        "D": "Maintaining the optimal osmotic pressure and pH balance of blood plasma"
+      },
+      "correctAnswer": "C",
+      "explanation": "Thrombocytes (platelets) initiate blood clotting. Oxygen transport by RBCs, antibodies by WBCs, osmotic balance by plasma proteins."
+    },
+    {
+      "id": 71,
+      "type": "mcq",
+      "text": "Which of the following network topologies offers the highest fault tolerance due to the availability of multiple communication paths between nodes?",
+      "options": {
+        "A": "Star network",
+        "B": "Ring network",
+        "C": "Mesh network",
+        "D": "Bus network"
+      },
+      "correctAnswer": "C",
+      "explanation": "Mesh topology provides redundant paths, so failure of one node does not disrupt network."
+    },
+    {
+      "id": 72,
+      "type": "mcq",
+      "text": "Which of the following space missions was not launched by the National Aeronautics and Space Administration (NASA)?",
+      "options": {
+        "A": "ESCAPADE Mission",
+        "B": "Lucy Mission",
+        "C": "Biomass Mission",
+        "D": "Orbiting Carbon Observatory"
+      },
+      "correctAnswer": "C",
+      "explanation": "Biomass Mission is by European Space Agency (ESA), not NASA."
+    },
+    {
+      "id": 73,
+      "type": "match",
+      "question": "Match List-I with List-II:\nList-I (Navigation System)\na. GLONASS\nb. Galileo\nc. BeiDou\nd. NavIC\nList-II (Country/Region)\n1. European Union\n2. China\n3. India\n4. Russia",
+      "columnA": [
+        { "key": "a", "value": "GLONASS" },
+        { "key": "b", "value": "Galileo" },
+        { "key": "c", "value": "BeiDou" },
+        { "key": "d", "value": "NavIC" }
+      ],
+      "columnB": [
+        { "key": "1", "value": "European Union" },
+        { "key": "2", "value": "China" },
+        { "key": "3", "value": "India" },
+        { "key": "4", "value": "Russia" }
+      ],
+      "options": {
+        "A": "a-4, b-3, c-2, d-1",
+        "B": "a-2, b-1, c-4, d-3",
+        "C": "a-4, b-1, c-2, d-3",
+        "D": "a-1, b-4, c-2, d-3"
+      },
+      "correctAnswer": "C",
+      "explanation": "GLONASS: Russia, Galileo: EU, BeiDou: China, NavIC: India."
+    },
+    {
+      "id": 74,
+      "type": "mcq",
+      "text": "Which of the following best describes the operational principle of a cryogenic rocket engine?",
+      "options": {
+        "A": "It uses compressed gases at normal temperature, along with solid propellants, to generate thrust",
+        "B": "It generates thrust by burning propellants such as liquid hydrogen and liquid oxygen stored at extremely low temperatures",
+        "C": "It uses electric fields to accelerate charged particles for low-thrust propulsion",
+        "D": "It relies on the decomposition of a single propellant through a catalytic reaction to produce thrust"
+      },
+      "correctAnswer": "B",
+      "explanation": "Cryogenic engines use liquid hydrogen and liquid oxygen at very low temperatures for high efficiency."
+    },
+    {
+      "id": 75,
+      "type": "mcq",
+      "text": "As blood flows through tissue capillaries, the fluid that enters intercellular spaces and is later collected by a parallel network of vessels is known as:",
+      "options": {
+        "A": "Plasma",
+        "B": "Serum",
+        "C": "Lymph",
+        "D": "Chyle"
+      },
+      "correctAnswer": "C",
+      "explanation": "Interstitial fluid collected by lymphatic vessels becomes lymph."
+    },
+    {
+      "id": 76,
+      "type": "statements",
+      "question": "Which of the following pairs regarding satellite internet projects and their developers are correctly matched?",
+      "statements": [
+        "Project Kuiper – Amazon",
+        "Starlink – SpaceX",
+        "OneWeb – Blue Origin",
+        "Qianfan – Chinese megaconstellation"
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 2, 3 and 4",
+        "C": "Only 1, 2 and 4",
+        "D": "1, 2, 3 and 4"
+      },
+      "correctAnswer": "C",
+      "explanation": "Pairs 1,2,4 correct. Pair 3 incorrect: OneWeb is operated by Eutelsat (France/UK), not Blue Origin."
+    },
+    {
+      "id": 77,
+      "type": "mcq",
+      "text": "Which human organ is primarily affected by the infectious disease trachoma?",
+      "options": {
+        "A": "Lungs",
+        "B": "Liver",
+        "C": "Kidneys",
+        "D": "Eyes"
+      },
+      "correctAnswer": "D",
+      "explanation": "Trachoma is a bacterial eye infection that can cause blindness."
+    },
+    {
+      "id": 78,
+      "type": "match",
+      "question": "Match List-I with List-II:\nList-I (Deficiency)\na. Rod cells\nb. Cone cells\nc. Blind spot\nd. Fovea centralis\nList-II (Disease/Condition)\n1. The point of highest visual acuity and resolution\n2. Responsible for twilight (scotopic) vision\n3. An area completely devoid of photoreceptor cells\n4. Responsible for daylight (photopic) and colour vision",
+      "columnA": [
+        { "key": "a", "value": "Rod cells" },
+        { "key": "b", "value": "Cone cells" },
+        { "key": "c", "value": "Blind spot" },
+        { "key": "d", "value": "Fovea centralis" }
+      ],
+      "columnB": [
+        { "key": "1", "value": "The point of highest visual acuity and resolution" },
+        { "key": "2", "value": "Responsible for twilight (scotopic) vision" },
+        { "key": "3", "value": "An area completely devoid of photoreceptor cells" },
+        { "key": "4", "value": "Responsible for daylight (photopic) and colour vision" }
+      ],
+      "options": {
+        "A": "a-4, b-2, c-3, d-1",
+        "B": "a-4, b-2, c-1, d-3",
+        "C": "a-2, b-4, c-3, d-1",
+        "D": "a-2, b-1, c-3, d-4"
+      },
+      "correctAnswer": "C",
+      "explanation": "Rods: scotopic vision (2), Cones: photopic and colour (4), Blind spot: no photoreceptors (3), Fovea: highest acuity (1)."
+    },
+    {
+      "id": 79,
+      "type": "mcq",
+      "text": "Which of the following pairs of Hepatitis viruses and their primary characteristics is incorrectly matched?",
+      "options": {
+        "A": "Hepatitis A: Transmitted primarily through the consumption of contaminated food and water.",
+        "B": "Hepatitis B: The only DNA virus in this group, transmitted via infected blood and body fluids.",
+        "C": "Hepatitis C: Preventable through a highly effective, globally administered recombinant vaccine.",
+        "D": "Hepatitis D: A defective virus that strictly requires a pre-existing Hepatitis B infection to replicate."
+      },
+      "correctAnswer": "C",
+      "explanation": "Hepatitis C has no vaccine; it is treatable with antivirals. Hepatitis A and B have vaccines."
+    },
+    {
+      "id": 80,
+      "type": "mcq",
+      "text": "The cell is regarded as the fundamental structural and functional unit of life because:",
+      "options": {
+        "A": "Every cell possesses a membrane-bound nucleus that regulates metabolic activities.",
+        "B": "Anything lacking a complete cellular organisation cannot independently perform all essential life processes.",
+        "C": "All cells contain mitochondria for continuous energy production.",
+        "D": "Cells possess a rigid outer cell wall that protects genetic material from degradation."
+      },
+      "correctAnswer": "B",
+      "explanation": "Cells are the smallest units that can carry out all life processes; viruses lack cellular organisation and cannot live independently."
+    },
+    {
+      "id": 81,
+      "type": "statements",
+      "question": "Consider the following statements regarding the Fluid Mosaic Model of the cell membrane. Which of the statements given above is/are correct?",
+      "statements": [
+        "The fluid nature of the membrane is due to the flexible bilayer of lipid molecules.",
+        "The mosaic appearance arises from protein molecules embedded within the lipid bilayer."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "C",
+      "explanation": "Both statements correct. Lipid bilayer provides fluidity; embedded proteins create mosaic pattern."
+    },
+    {
+      "id": 82,
+      "type": "statements",
+      "question": "Which of the following statements regarding recent artificial intelligence models in biological and health sciences are correct? How many of the statements given above is/are correct?",
+      "statements": [
+        "AlphaFold, developed by Google DeepMind, predicts the three-dimensional structure of proteins from their amino acid sequences.",
+        "BioEmu-1, a deep learning model developed by Microsoft, is designed to classify the effects of protein-coding genetic variants to predict human DNA mutations.",
+        "AlphaGenome was developed collaboratively by Google DeepMind and Yale University to interpret biological interactions by analysing the language of individual cells."
+      ],
+      "options": {
+        "A": "Only one",
+        "B": "Only two",
+        "C": "All three",
+        "D": "None"
+      },
+      "correctAnswer": "A",
+      "explanation": "Only statement 1 is correct. BioEmu-1 predicts protein shapes, not variant effects; AlphaGenome is not a collaborative model with Yale."
+    },
+    {
+      "id": 83,
+      "type": "mcq",
+      "text": "Which animal group is considered the primary natural reservoir of the monkeypox virus?",
+      "options": {
+        "A": "Primates",
+        "B": "Rodents",
+        "C": "Bats",
+        "D": "Birds"
+      },
+      "correctAnswer": "B",
+      "explanation": "Rodents (e.g., rope squirrels, Gambian pouched rats) are the natural reservoir; monkeys are incidental hosts."
+    },
+    {
+      "id": 84,
+      "type": "mcq",
+      "text": "Which of the following best describes the architecture and functional principle of a Generative Adversarial Network (GAN)?",
+      "options": {
+        "A": "A single neural network designed to predict future trends from historical numerical data",
+        "B": "Two neural networks trained in adversarial competition to generate highly realistic synthetic data",
+        "C": "A decentralised peer-to-peer computational network used for the validation of smart contracts",
+        "D": "A quantum computational algorithm developed for cryptographic decryption"
+      },
+      "correctAnswer": "B",
+      "explanation": "GANs consist of a generator and a discriminator competing to create realistic synthetic data."
+    },
+    {
+      "id": 85,
+      "type": "mcq",
+      "text": "In plant cells, the conversion of solar energy into chemical energy during photosynthesis primarily occurs in:",
+      "options": {
+        "A": "Mitochondria",
+        "B": "Lysosomes",
+        "C": "Chloroplasts",
+        "D": "Endoplasmic reticulum"
+      },
+      "correctAnswer": "C",
+      "explanation": "Chloroplasts contain chlorophyll and convert light energy into chemical energy (ATP, NADPH)."
+    },
+    {
+      "id": 86,
+      "type": "mcq",
+      "text": "Which human organ is primarily associated with the most serious malignancies caused by Human Papillomavirus (HPV)?",
+      "options": {
+        "A": "Liver",
+        "B": "Brain",
+        "C": "Cervix",
+        "D": "Lungs"
+      },
+      "correctAnswer": "C",
+      "explanation": "HPV, especially types 16 and 18, causes cervical cancer."
+    },
+    {
+      "id": 87,
+      "type": "mcq",
+      "text": "Which of the following best describes the mechanism of peripheral immune tolerance?",
+      "options": {
+        "A": "It inactivates or suppresses self-reactive lymphocytes that have escaped into the secondary lymphoid tissues",
+        "B": "It destroys self-reactive immature T-cells during their initial development strictly within the thymus gland",
+        "C": "It utilises circulating macrophages to indiscriminately engulf and destroy foreign bacterial pathogens entering the bloodstream",
+        "D": "It actively stimulates memory B-cells to produce large quantities of autoantibodies against healthy tissues"
+      },
+      "correctAnswer": "A",
+      "explanation": "Peripheral tolerance controls self-reactive cells in peripheral tissues, while central tolerance occurs in thymus/bone marrow."
+    },
+    {
+      "id": 88,
+      "type": "statements",
+      "question": "Consider the following statements regarding mitochondria and chloroplasts. Which of the statements given above is/are correct?",
+      "statements": [
+        "Mitochondria and chloroplasts possess their own circular DNA and ribosomes.",
+        "These organelles can synthesise all their required proteins independently of the nucleus."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "A",
+      "explanation": "Statement 1 correct. Statement 2 incorrect: they are semi-autonomous; they depend on nuclear DNA for many proteins."
+    },
+    {
+      "id": 89,
+      "type": "assertion_reason",
+      "assertion": "Artificial trans fats are highly harmful dietary components that public health agencies are actively eliminating globally.",
+      "reason": "The chemical process of partial hydrogenation creates trans fats, which aggressively raise bad cholesterol and lower good cholesterol.",
+      "options": {
+        "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+        "C": "(A) is true but (R) is false.",
+        "D": "(A) is false but (R) is true."
+      },
+      "correctAnswer": "A",
+      "explanation": "Both true, and R explains why trans fats are harmful."
+    },
+    {
+      "id": 90,
+      "type": "mcq",
+      "text": "Which of the following best describes the primary mechanism of action of anti-obesity drugs such as Semaglutide?",
+      "options": {
+        "A": "It mimics a natural hormone to act on receptors regulating appetite and slowing gastric emptying",
+        "B": "It directly inhibits pancreatic enzymes responsible for the digestion of dietary fats",
+        "C": "It stimulates the central nervous system to markedly increase the basal metabolic rate",
+        "D": "It acts as an osmotic diuretic to promote rapid loss of body water"
+      },
+      "correctAnswer": "A",
+      "explanation": "Semaglutide is a GLP-1 receptor agonist that reduces appetite and slows gastric emptying."
+    },
+    {
+      "id": 91,
+      "type": "mcq",
+      "text": "Which of the following contributions directly enabled James Watson and Francis Crick to propose the double-helix model of DNA in 1953?",
+      "options": {
+        "A": "Discovery of DNA polymerase and the mechanism of DNA replication",
+        "B": "X-ray diffraction images of DNA produced by Rosalind Franklin and Maurice Wilkins",
+        "C": "Radioactive tracer experiments conducted by Hershey and Chase",
+        "D": "Mapping of the human genome through the Human Genome Project"
+      },
+      "correctAnswer": "B",
+      "explanation": "Franklin's X-ray diffraction images (Photo 51) provided key evidence for the double helix."
+    },
+    {
+      "id": 92,
+      "type": "mcq",
+      "text": "Which of the following groups of mRNA codons function as stop codons during protein synthesis?",
+      "options": {
+        "A": "AUG, GUG, UUG",
+        "B": "UAA, UAG, UGA",
+        "C": "UUU, UUC, UUA",
+        "D": "CAA, CAG, CGA"
+      },
+      "correctAnswer": "B",
+      "explanation": "UAA, UAG, UGA are stop codons (nonsense codons) that terminate translation."
+    },
+    {
+      "id": 93,
+      "type": "mcq",
+      "text": "What does the abbreviation \"mRNA\" stand for?",
+      "options": {
+        "A": "Metabolic Ribonucleic Acid",
+        "B": "Messenger Ribonucleic Acid",
+        "C": "Mitochondrial Ribonucleic Acid",
+        "D": "Micro Ribonucleic Acid"
+      },
+      "correctAnswer": "B",
+      "explanation": "mRNA stands for Messenger RNA, which carries genetic information from DNA to ribosomes."
+    },
+    {
+      "id": 94,
+      "type": "statements",
+      "question": "Consider the following pairs of specific types of Diabetes and their primary biological characteristics. How many pairs are correctly matched?",
+      "statements": [
+        "Type 1 Diabetes: An autoimmune condition where the immune system mistakenly attacks and destroys insulin-producing beta cells in the pancreas.",
+        "Type 2 Diabetes: A metabolic disorder characterised by cellular insulin resistance and a gradual decline in natural insulin production.",
+        "Gestational Diabetes: A temporary form of hyperglycemia that develops exclusively during pregnancy and typically resolves after childbirth.",
+        "Diabetes Insipidus: A chronic condition caused by excessive dietary sugar intake, leading to dangerously high blood glucose levels."
+      ],
+      "options": {
+        "A": "Only one pair",
+        "B": "Only two pairs",
+        "C": "Only three pairs",
+        "D": "All four pairs"
+      },
+      "correctAnswer": "C",
+      "explanation": "Pairs 1,2,3 correct. Pair 4 incorrect: Diabetes Insipidus is due to ADH deficiency, not related to blood sugar."
+    },
+    {
+      "id": 95,
+      "type": "statements",
+      "question": "Consider the following statements regarding meiosis. Which of the statements given above is/are correct?",
+      "statements": [
+        "Meiosis is termed reduction division because it reduces the chromosome number by half in gametes, thereby maintaining the chromosome number of the species after fertilisation.",
+        "Meiosis generates genetic variation through the exchange of genetic material between homologous chromosomes."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "C",
+      "explanation": "Both statements correct. Meiosis reduces ploidy and creates variation via crossing over."
+    },
+    {
+      "id": 96,
+      "type": "statements",
+      "question": "Consider the following statements regarding the 'Project Akashteer' system. Which of the statements given above is/are correct?",
+      "statements": [
+        "It is a fully indigenous, automated Air Defence Control System developed by the DRDO and HAL.",
+        "It is a vehicle-based, mobile component of the C4ISR framework designed to automate threat tracking.",
+        "It signifies a strategic military shift from proactive retaliation toward a static, passive defence posture."
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 2",
+        "C": "Only 1 and 3",
+        "D": "1,2 and 3"
+      },
+      "correctAnswer": "B",
+      "explanation": "Statement 2 correct. Statement 1 incorrect: developed by BEL, DRDO, ISRO, not HAL. Statement 3 incorrect: it enables proactive retaliation."
+    },
+    {
+      "id": 97,
+      "type": "mcq",
+      "text": "Which of the following statements best defines Gregor Mendel's \"Law of Independent Assortment\"?",
+      "options": {
+        "A": "The two alleles of a trait separate during gamete formation so that each gamete receives only one allele.",
+        "B": "The inheritance of one trait is independent of the inheritance of another trait.",
+        "C": "A dominant allele masks the expression of a recessive allele in a heterozygote.",
+        "D": "Genes located close together on the same chromosome are inherited together."
+      },
+      "correctAnswer": "B",
+      "explanation": "Law of Independent Assortment states that alleles of different genes assort independently during gamete formation."
+    },
+    {
+      "id": 98,
+      "type": "mcq",
+      "text": "Which of the following is not a component of the indigenous Integrated Air Defence Weapon System (IADWS) framework?",
+      "options": {
+        "A": "Quick Reaction Surface-to-Air Missile",
+        "B": "Very Short-Range Air Defence System",
+        "C": "Helina Guided Missile System",
+        "D": "Laser-based Directed Energy Weapon"
+      },
+      "correctAnswer": "C",
+      "explanation": "Helina is an anti-tank guided missile, not an air defence system."
+    },
+    {
+      "id": 99,
+      "type": "mcq",
+      "text": "Which of the following pairs regarding naval warship classes and their operational roles is incorrectly matched?",
+      "options": {
+        "A": "Destroyers: Fast, heavily armed multi-role fleet escorts capable of defending against air, surface and submarine threats",
+        "B": "Cruisers: Warships designed exclusively for amphibious landings and deployment of marine expeditionary forces",
+        "C": "Frigates: Medium-sized warships commonly optimised for anti-submarine warfare and convoy protection",
+        "D": "Corvettes: Small warships generally used for coastal defence, patrol and fast attack roles"
+      },
+      "correctAnswer": "B",
+      "explanation": "Cruisers are large surface combatants, not amphibious assault ships. Amphibious roles are for LHDs/LPDs."
+    },
+    {
+      "id": 100,
+      "type": "statements",
+      "question": "Consider the following technological applications. Which of the above are recognised applications of nanotechnology?",
+      "statements": [
+        "Targeted drug delivery",
+        "Heavy metal water purification",
+        "Quantum dot displays",
+        "Self-cleaning fabrics",
+        "Smart packaging for agriculture"
+      ],
+      "options": {
+        "A": "Only 1,2 and 4",
+        "B": "Only 2,3 and 5",
+        "C": "Only 1,3,4 and 5",
+        "D": "1,2,3,4 and 5"
+      },
+      "correctAnswer": "D",
+      "explanation": "All five are nanotechnology applications using nanomaterials (1-100 nm)."
+    },
+    {
+      "id": 101,
+      "type": "statements",
+      "question": "Consider the following pairs regarding genetic disorders and their associated inheritance patterns or chromosomal abnormalities. Which of the pairs given above are correctly matched?",
+      "statements": [
+        "Haemophilia : X-linked recessive trait",
+        "Sickle-cell anaemia : Autosomal recessive trait",
+        "Down's syndrome : Monosomy of chromosome 21",
+        "Klinefelter's syndrome : 44 Autosomes + XO"
+      ],
+      "options": {
+        "A": "Only 1 and 3",
+        "B": "Only 2 and 4",
+        "C": "Only 1 and 2",
+        "D": "1, 2 and 4"
+      },
+      "correctAnswer": "C",
+      "explanation": "Pairs 1 and 2 correct. Pair 3 incorrect: Down's is trisomy 21. Pair 4 incorrect: Klinefelter is XXY (47 chromosomes)."
+    },
+    {
+      "id": 102,
+      "type": "statements",
+      "question": "Which of the following statements regarding fighter aircraft generations are correct?",
+      "statements": [
+        "Second-generation fighters marked the emergence of supersonic capability along with early radar and guided air-to-air missiles.",
+        "Third-generation fighters increasingly adopted multi-role roles and introduced Beyond Visual Range combat capability.",
+        "Fourth-generation fighters are associated with fly-by-wire systems and enhanced aerodynamic manoeuvrability.",
+        "Fifth-generation fighters are primarily defined by dependence on ramjet engines for sustained hypersonic flight."
+      ],
+      "options": {
+        "A": "Only 1, 2 and 3",
+        "B": "Only 2, 3 and 4",
+        "C": "Only 1 and 4",
+        "D": "1, 2, 3 and 4"
+      },
+      "correctAnswer": "A",
+      "explanation": "Statements 1,2,3 correct. Statement 4 incorrect: 5th gen defined by stealth, not ramjet engines."
+    },
+    {
+      "id": 103,
+      "type": "mcq",
+      "text": "Which of the following principles is primarily utilised by the Hyperloop transportation system to achieve very high speeds?",
+      "options": {
+        "A": "Aerodynamic lift combined with jet propulsion",
+        "B": "Magnetic levitation within low-pressure tubes",
+        "C": "Positive pneumatic pressure pushing a pod through a pipeline",
+        "D": "Superconducting cables carrying high-voltage direct current"
+      },
+      "correctAnswer": "B",
+      "explanation": "Hyperloop uses maglev and near-vacuum tubes to reduce friction and drag."
+    },
+    {
+      "id": 104,
+      "type": "mcq",
+      "text": "Which of the following cellular structures is primarily responsible for the synthesis of proteins by translating messenger RNA (mRNA)?",
+      "options": {
+        "A": "Golgi apparatus",
+        "B": "Mitochondria",
+        "C": "Ribosomes",
+        "D": "Smooth Endoplasmic Reticulum"
+      },
+      "correctAnswer": "C",
+      "explanation": "Ribosomes translate mRNA into proteins."
+    },
+    {
+      "id": 105,
+      "type": "mcq",
+      "text": "Which of the following aviation devices records flight data and cockpit conversations, and helps in accident investigation after a crash?",
+      "options": {
+        "A": "Ground Proximity Warning System",
+        "B": "Traffic Collision Avoidance System",
+        "C": "Flight Management Computer",
+        "D": "Black Box"
+      },
+      "correctAnswer": "D",
+      "explanation": "Black Box (Flight Data Recorder and Cockpit Voice Recorder) is used for accident investigation."
+    },
+    {
+      "id": 106,
+      "type": "mcq",
+      "text": "Which of the following best describes altermagnetism, a newly identified magnetic phase?",
+      "options": {
+        "A": "They exhibit a strong, uniform magnetic field that attracts magnetic materials",
+        "B": "They possess zero net magnetisation but can exhibit spin-polarised electronic behaviour",
+        "C": "They are permanent magnets that lose magnetism at room temperature",
+        "D": "They completely expel external magnetic fields and exhibit levitation"
+      },
+      "correctAnswer": "B",
+      "explanation": "Altermagnets have no net magnetization but show spin-polarised bands, useful for spintronics."
+    },
+    {
+      "id": 107,
+      "type": "mcq",
+      "text": "Which of the following substances or organisms is NOT classified as an agricultural \"Biostimulant\"?",
+      "options": {
+        "A": "Humic and Fulvic acids",
+        "B": "Seaweed and botanical extracts",
+        "C": "Glyphosate",
+        "D": "Arbuscular Mycorrhizal Fungi (AMF)"
+      },
+      "correctAnswer": "C",
+      "explanation": "Glyphosate is a herbicide, not a biostimulant. Biostimulants enhance plant growth and nutrient uptake."
+    },
+    {
+      "id": 108,
+      "type": "mcq",
+      "text": "Which of the following best describes the primary function of lysosomes and their hydrolytic enzymes?",
+      "options": {
+        "A": "They act as the primary site for the continuous synthesis of cellular proteins.",
+        "B": "They capture solar energy to produce chemical energy for the cell.",
+        "C": "They modify, sort, and package lipids for transport outside the cell membrane.",
+        "D": "They serve as a cellular waste disposal system by digesting worn-out organelles and foreign materials."
+      },
+      "correctAnswer": "D",
+      "explanation": "Lysosomes digest waste and foreign particles using hydrolytic enzymes."
+    },
+    {
+      "id": 109,
+      "type": "mcq",
+      "text": "Which specialised branch of anatomy is dedicated to the scientific study of the structure and function of bones?",
+      "options": {
+        "A": "Myology",
+        "B": "Osteology",
+        "C": "Cytology",
+        "D": "Histology"
+      },
+      "correctAnswer": "B",
+      "explanation": "Osteology is the study of bones."
+    },
+    {
+      "id": 110,
+      "type": "mcq",
+      "text": "Which of the following organisms is unique for having haemoglobin dissolved directly in its blood plasma while lacking red blood cells (RBCs)?",
+      "options": {
+        "A": "Cockroach",
+        "B": "Frog",
+        "C": "Earthworm",
+        "D": "Rabbit"
+      },
+      "correctAnswer": "C",
+      "explanation": "Earthworm has haemoglobin dissolved in plasma, no RBCs."
+    },
+    {
+      "id": 111,
+      "type": "mcq",
+      "text": "Which mosquito genus is identified by its characteristic resting posture, with the body held at an angle to the surface?",
+      "options": {
+        "A": "Aedes",
+        "B": "Anopheles",
+        "C": "Culex",
+        "D": "Mansonia"
+      },
+      "correctAnswer": "B",
+      "explanation": "Anopheles rests with body at an angle; Culex and Aedes rest parallel."
+    },
+    {
+      "id": 112,
+      "type": "mcq",
+      "text": "Fungi are classified separately from plants primarily due to the absence of which of the following?",
+      "options": {
+        "A": "Cell wall",
+        "B": "Nucleus",
+        "C": "Chlorophyll",
+        "D": "Cytoplasm"
+      },
+      "correctAnswer": "C",
+      "explanation": "Fungi lack chlorophyll and are heterotrophic, unlike plants."
+    },
+    {
+      "id": 113,
+      "type": "statements",
+      "question": "Consider the following statements regarding the endoplasmic reticulum in eukaryotic cells. Which of the statements given above is/are incorrect?",
+      "statements": [
+        "Rough endoplasmic reticulum appears rough due to the presence of ribosomes on its surface and is associated with protein synthesis.",
+        "Smooth endoplasmic reticulum lacks ribosomes and is involved in lipid synthesis and detoxification in liver cells."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "D",
+      "explanation": "Both statements are correct."
+    },
+    {
+      "id": 114,
+      "type": "mcq",
+      "text": "What term denotes the functional role of an organism within its ecosystem?",
+      "options": {
+        "A": "Biome",
+        "B": "Ecotone",
+        "C": "Niche",
+        "D": "Succession"
+      },
+      "correctAnswer": "C",
+      "explanation": "Niche is the functional role; habitat is the address."
+    },
+    {
+      "id": 115,
+      "type": "mcq",
+      "text": "Which of the following represents a mutualistic association between algae and fungi?",
+      "options": {
+        "A": "Virus",
+        "B": "Lichen",
+        "C": "Moss",
+        "D": "Fern"
+      },
+      "correctAnswer": "B",
+      "explanation": "Lichen is a symbiotic association of fungus and alga/cyanobacterium."
+    },
+    {
+      "id": 116,
+      "type": "mcq",
+      "text": "Which of the following best describes the primary function of the Golgi apparatus in a living cell?",
+      "options": {
+        "A": "Generating cellular energy in the form of ATP molecules",
+        "B": "Modifying, sorting, and packaging proteins and lipids for delivery",
+        "C": "Destroying old, worn-out cell organelles and foreign bacteria",
+        "D": "Storing genetic information and controlling the process of cell division"
+      },
+      "correctAnswer": "B",
+      "explanation": "Golgi apparatus modifies, sorts, and packages proteins and lipids."
+    },
+    {
+      "id": 117,
+      "type": "mcq",
+      "text": "What is the term for the mutualistic association between fungi and plant roots?",
+      "options": {
+        "A": "Parasitism",
+        "B": "Mycorrhiza",
+        "C": "Saprophytism",
+        "D": "Commensalism"
+      },
+      "correctAnswer": "B",
+      "explanation": "Mycorrhiza is mutualistic association of fungi with plant roots."
+    },
+    {
+      "id": 118,
+      "type": "mcq",
+      "text": "What are organisms that break down dead organic matter into simpler inorganic substances called?",
+      "options": {
+        "A": "Producers",
+        "B": "Herbivores",
+        "C": "Decomposers",
+        "D": "Predators"
+      },
+      "correctAnswer": "C",
+      "explanation": "Decomposers (bacteria, fungi) break down dead matter."
+    },
+    {
+      "id": 119,
+      "type": "mcq",
+      "text": "Which of the following forms the basis of organoid intelligence, an emerging approach to biological computing?",
+      "options": {
+        "A": "Silicon-based synthetic neurons",
+        "B": "Bioluminescent marine algae",
+        "C": "Fungal mycelial networks",
+        "D": "Lab-grown human brain cell cultures"
+      },
+      "correctAnswer": "D",
+      "explanation": "Organoid intelligence uses 3D brain organoids (lab-grown brain cells) for computing."
+    },
+    {
+      "id": 120,
+      "type": "mcq",
+      "text": "Charles Darwin is associated with which of the following evolutionary concepts?",
+      "options": {
+        "A": "Natural selection",
+        "B": "Inheritance of acquired characters",
+        "C": "Mutation theory",
+        "D": "Germplasm theory"
+      },
+      "correctAnswer": "A",
+      "explanation": "Darwin proposed natural selection as mechanism of evolution."
+    },
+    {
+      "id": 121,
+      "type": "mcq",
+      "text": "Which technique uses cosmic-ray subatomic particles to image the internal structure of large solid objects without physical damage?",
+      "options": {
+        "A": "Carbon dating",
+        "B": "Muon tomography",
+        "C": "LiDAR scanning",
+        "D": "Seismic refraction"
+      },
+      "correctAnswer": "B",
+      "explanation": "Muon tomography uses muons to image internal structures like pyramids."
+    },
+    {
+      "id": 122,
+      "type": "mcq",
+      "text": "Which process uses microorganisms such as Acidithiobacillus ferrooxidans to extract metals from low-grade ores through bioleaching?",
+      "options": {
+        "A": "Bioprinting",
+        "B": "Biomining",
+        "C": "Biostimulation",
+        "D": "Bio-augmentation"
+      },
+      "correctAnswer": "B",
+      "explanation": "Biomining uses microbes to extract metals from ores."
+    },
+    {
+      "id": 123,
+      "type": "mcq",
+      "text": "Edward Jenner developed the world's first successful vaccine against:",
+      "options": {
+        "A": "Polio",
+        "B": "Smallpox",
+        "C": "Rabies",
+        "D": "Tuberculosis"
+      },
+      "correctAnswer": "B",
+      "explanation": "Jenner developed smallpox vaccine using cowpox."
+    },
+    {
+      "id": 124,
+      "type": "mcq",
+      "text": "What is the term for transplantation of live cells, tissues or organs from a non-human animal into a human recipient?",
+      "options": {
+        "A": "Autotransplantation",
+        "B": "Allotransplantation",
+        "C": "Xenotransplantation",
+        "D": "Isotransplantation"
+      },
+      "correctAnswer": "C",
+      "explanation": "Xenotransplantation is cross-species transplantation."
+    },
+    {
+      "id": 125,
+      "type": "mcq",
+      "text": "Which of the following best describes the phenomenon of quantum tunnelling?",
+      "options": {
+        "A": "The ability of a quantum system to exist in multiple states simultaneously until measurement",
+        "B": "Instantaneous transfer of a quantum state between physically separated particles",
+        "C": "Passage of a subatomic particle through an energy barrier despite lacking sufficient classical energy to overcome it",
+        "D": "Loss of a quantum state due to interaction with the external environment"
+      },
+      "correctAnswer": "C",
+      "explanation": "Quantum tunnelling allows particles to pass through barriers classically impossible."
+    },
+    {
+      "id": 126,
+      "type": "statements",
+      "question": "Consider the following statements regarding lymphocytes in the human immune system. Which of the statements given above is/are correct?",
+      "statements": [
+        "B-lymphocytes are primarily responsible for cell-mediated immunity by directly destroying infected and tumour cells.",
+        "T-lymphocytes do not secrete antibodies but assist B-lymphocytes in antibody production."
+      ],
+      "options": {
+        "A": "Only 1",
+        "B": "Only 2",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "correctAnswer": "B",
+      "explanation": "Statement 1 incorrect: B-cells mediate humoral immunity (antibodies); T-cells mediate cell-mediated immunity. Statement 2 correct: Helper T-cells assist B-cells."
+    },
+    {
+      "id": 127,
+      "type": "mcq",
+      "text": "Which experimental device uses powerful magnetic fields to confine hot plasma in a toroidal chamber for controlled nuclear fusion?",
+      "options": {
+        "A": "Particle accelerator",
+        "B": "Tokamak",
+        "C": "Galvanometer",
+        "D": "Spectrometer"
+      },
+      "correctAnswer": "B",
+      "explanation": "Tokamak is a fusion device using magnetic confinement."
+    },
+    {
+      "id": 128,
+      "type": "mcq",
+      "text": "Which of the following describes the Kessler Syndrome in the context of outer space activities?",
+      "options": {
+        "A": "Gradual cooling of the Sun's core",
+        "B": "Biological effects of zero gravity on human bone density",
+        "C": "Disruption of satellite communication during solar flares",
+        "D": "A self-sustaining cascade of collisions between objects in Earth's orbit"
+      },
+      "correctAnswer": "D",
+      "explanation": "Kessler Syndrome is cascading collisions of space debris."
+    },
+    {
+      "id": 129,
+      "type": "statements",
+      "question": "Which of the following pairs regarding Directed Energy Weapon systems and their countries of origin are correctly matched?",
+      "statements": [
+        "HELIOS : United States of America",
+        "Peresvet : United Kingdom",
+        "Silent Hunter : China",
+        "IDD&IS Mk2A : India"
+      ],
+      "options": {
+        "A": "Only 1 and 3",
+        "B": "Only 1, 3 and 4",
+        "C": "Only 2, 3 and 4",
+        "D": "1, 2, 3 and 4"
+      },
+      "correctAnswer": "B",
+      "explanation": "Pairs 1,3,4 correct. Peresvet is Russian, not UK."
+    },
+    {
+      "id": 130,
+      "type": "mcq",
+      "text": "The immunoglobulin abundantly present in colostrum that provides passive immunity to a newborn is:",
+      "options": {
+        "A": "IgE",
+        "B": "IgM",
+        "C": "IgA",
+        "D": "IgG"
+      },
+      "correctAnswer": "C",
+      "explanation": "Colostrum is rich in secretory IgA for mucosal immunity."
+    },
+    {
+      "id": 131,
+      "type": "statements",
+      "question": "Which of the following statements regarding cruise and ballistic missiles are correct?",
+      "statements": [
+        "Ballistic missiles are powered primarily during the initial launch phase, whereas cruise missiles remain continuously powered during flight.",
+        "Cruise missiles remain within the Earth's atmosphere, whereas ballistic missiles may follow a trajectory extending into the exoatmosphere.",
+        "In India's missile arsenal, the Agni series are cruise missiles, while BrahMos is a ballistic missile."
+      ],
+      "options": {
+        "A": "Only 1 and 2",
+        "B": "Only 2 and 3",
+        "C": "Only 1",
+        "D": "1, 2 and 3"
+      },
+      "correctAnswer": "A",
+      "explanation": "Statements 1 and 2 correct. Statement 3 incorrect: Agni are ballistic, BrahMos is cruise."
+    },
+    {
+      "id": 132,
+      "type": "statements",
+      "question": "Consider the following pairs of prominent global air defence systems and their primary developing countries/regions. How many pairs are correctly matched?",
+      "statements": [
+        "Iron Dome : Israel",
+        "Patriot : United Kingdom",
+        "HQ-9 : China",
+        "SAMP/T(Mamba) : Russia"
+      ],
+      "options": {
+        "A": "Only one pair",
+        "B": "Only two pairs",
+        "C": "Only three pairs",
+        "D": "All four pairs"
+      },
+      "correctAnswer": "B",
+      "explanation": "Correct pairs: 1 (Israel) and 3 (China). Patriot is US, SAMP/T is European (France/Italy)."
+    },
+    {
+      "id": 133,
+      "type": "mcq",
+      "text": "Human Immunodeficiency Virus (HIV) primarily targets and destroys which of the following cells of the human immune system?",
+      "options": {
+        "A": "B-lymphocytes",
+        "B": "Helper T-lymphocytes (CD4 cells)",
+        "C": "Red blood cells",
+        "D": "Blood platelets"
+      },
+      "correctAnswer": "B",
+      "explanation": "HIV infects CD4+ Helper T-cells, leading to immunodeficiency."
+    },
+    {
+      "id": 134,
+      "type": "mcq",
+      "text": "Which of the following pairs of major vector-borne diseases and their primary causative agents or vectors is incorrectly matched?",
+      "options": {
+        "A": "Malaria: Caused by a protozoan parasite and transmitted by the female Anopheles mosquito.",
+        "B": "Dengue: A viral disease transmitted by the Aedes aegypti mosquito, which primarily bites during the daytime.",
+        "C": "Chikungunya: Caused by a bacterial infection and transmitted primarily by the Aedes mosquito.",
+        "D": "Lymphatic Filariasis: Caused by a parasitic nematode worm and commonly transmitted by the Culex mosquito."
+      },
+      "correctAnswer": "C",
+      "explanation": "Chikungunya is viral, not bacterial."
+    },
+    {
+      "id": 135,
+      "type": "statements",
+      "question": "Consider the following pairs of astronomical observatories in India and their locations. How many pairs are correctly matched?",
+      "statements": [
+        "Udaipur Solar Observatory : Rajasthan",
+        "Kodaikanal Solar Observatory : Kerala",
+        "Gauribidanur Radio Observatory : Karnataka",
+        "Aryabhatta Research Institute of Observational Sciences (ARIES) : Himachal Pradesh"
+      ],
+      "options": {
+        "A": "Only one pair",
+        "B": "Only two pairs",
+        "C": "Only three pairs",
+        "D": "All four pairs"
+      },
+      "correctAnswer": "B",
+      "explanation": "Correct: 1 (Rajasthan), 3 (Karnataka). Kodaikanal is in Tamil Nadu, ARIES in Nainital (Uttarakhand)."
+    },
+    {
+      "id": 136,
+      "type": "statements",
+      "question": "Consider the following pairs regarding vaccine types and their mechanisms of action. Which of the pairs given above are correctly matched?",
+      "statements": [
+        "mRNA vaccines: Deliver genetic instructions for host cells to produce antigenic proteins",
+        "Live-attenuated vaccines: Introduce a chemically killed pathogen to stimulate immunity",
+        "Viral vector vaccines: Use a modified harmless virus to deliver the target genetic material",
+        "Toxoid vaccines: Use isolated surface proteins or polysaccharides of the pathogen"
+      ],
+      "options": {
+        "A": "Only 1 and 3",
+        "B": "Only 2 and 4",
+        "C": "Only 1, 2 and 3",
+        "D": "1, 2, 3 and 4"
+      },
+      "correctAnswer": "A",
+      "explanation": "Pairs 1 and 3 correct. Live-attenuated uses weakened live pathogen (not killed). Toxoid uses inactivated toxin, not surface proteins."
+    },
+    {
+      "id": 137,
+      "type": "mcq",
+      "text": "Which of the following best describes the fundamental operational infrastructure of satellite broadband internet systems?",
+      "options": {
+        "A": "Geostationary satellites transmit data directly between user terminals, requiring no ground stations.",
+        "B": "An orbiting satellite constellation links with terrestrial gateway stations to wirelessly transmit internet data.",
+        "C": "Satellites relay internet signals by bouncing transmissions off the ionosphere toward ground receivers.",
+        "D": "LEO satellites communicate solely via intersatellite laser links, completely bypassing all ground-based infrastructure."
+      },
+      "correctAnswer": "B",
+      "explanation": "Satellite broadband uses satellite constellations and ground gateway stations."
+    },
+    {
+      "id": 138,
+      "type": "mcq",
+      "text": "Which of the following best describes a Sun-synchronous polar orbit?",
+      "options": {
+        "A": "An orbit that remains fixed over a single point above the Earth's equator",
+        "B": "A near-polar orbit in which the satellite passes over a given location at nearly the same local solar time",
+        "C": "A highly elliptical orbit designed for prolonged coverage of high-latitude regions",
+        "D": "A low-Earth orbit that moves west to east to utilise Earth's rotational velocity"
+      },
+      "correctAnswer": "B",
+      "explanation": "Sun-synchronous orbit maintains constant solar time for consistent lighting."
+    },
+    {
+      "id": 139,
+      "type": "mcq",
+      "text": "Which of the following bacterial pathogens is specifically responsible for causing the disease Splenic fever?",
+      "options": {
+        "A": "Bacillus cereus",
+        "B": "Yersinia pestis",
+        "C": "Bacillus anthracis",
+        "D": "Clostridium perfringens"
+      },
+      "correctAnswer": "C",
+      "explanation": "Splenic fever is anthrax, caused by Bacillus anthracis."
+    },
+    {
+      "id": 140,
+      "type": "match",
+      "question": "Match List-I with List-II:\nList-I (Nutrient)\na. Polysaccharides\nb. Trace Minerals\nc. Water-Soluble Vitamins\nd. Essential Amino Acids\nList-II (Examples)\n1. Folic Acid\n2. Lysine and Methionine\n3. Starch and Glycogen\n4. Selenium and Zinc",
+      "columnA": [
+        { "key": "a", "value": "Polysaccharides" },
+        { "key": "b", "value": "Trace Minerals" },
+        { "key": "c", "value": "Water-Soluble Vitamins" },
+        { "key": "d", "value": "Essential Amino Acids" }
+      ],
+      "columnB": [
+        { "key": "1", "value": "Folic Acid" },
+        { "key": "2", "value": "Lysine and Methionine" },
+        { "key": "3", "value": "Starch and Glycogen" },
+        { "key": "4", "value": "Selenium and Zinc" }
+      ],
+      "options": {
+        "A": "a-4, b-2, c-3, d-1",
+        "B": "a-4, b-3, c-2, d-1",
+        "C": "a-3, b-1, c-4, d-2",
+        "D": "a-3, b-4, c-1, d-2"
+      },
+      "correctAnswer": "D",
+      "explanation": "Polysaccharides: starch/glycogen (3); Trace minerals: Se, Zn (4); Water-soluble vitamins: folic acid (1); Essential amino acids: lysine, methionine (2)."
+    },
+    {
+      "id": 141,
+      "type": "mcq",
+      "text": "Which of the following best explains the significance of a lower nanometer (nm) rating in modern mobile processors?",
+      "options": {
+        "A": "It indicates a smaller transistor size, enabling more transistors per chip, higher processing speed and lower power consumption",
+        "B": "It measures the clock frequency of the processor in nanoseconds, directly determining how many instructions are executed per second",
+        "C": "It specifies the thickness of the thermal paste layer applied between the processor die and the heat sink during manufacturing",
+        "D": "It denotes the physical length of the copper interconnect pathways connecting the processor to RAM modules on the motherboard"
+      },
+      "correctAnswer": "A",
+      "explanation": "Lower nm means smaller transistors, more density, better performance and efficiency."
+    },
+    {
+      "id": 142,
+      "type": "mcq",
+      "text": "Kala-azar is transmitted by which of the following vectors?",
+      "options": {
+        "A": "Female Anopheles mosquito",
+        "B": "Aedes aegypti mosquito",
+        "C": "Culex mosquito",
+        "D": "Phlebotomus (sandfly)"
+      },
+      "correctAnswer": "D",
+      "explanation": "Kala-azar (leishmaniasis) is transmitted by sandflies (Phlebotomus)."
+    },
+    {
+      "id": 143,
+      "type": "mcq",
+      "text": "Which of the following pathogens is a causative agent for pneumonia in humans?",
+      "options": {
+        "A": "Salmonella typhi",
+        "B": "Haemophilus influenzae",
+        "C": "Mycobacterium leprae",
+        "D": "Wuchereria bancrofti"
+      },
+      "correctAnswer": "B",
+      "explanation": "Haemophilus influenzae is a common cause of bacterial pneumonia."
+    },
+    {
+      "id": 144,
+      "type": "mcq",
+      "text": "Which of the following best describes how modern undersea communication cables transmit global internet data?",
+      "options": {
+        "A": "Electrical analogue signals are continuously transmitted through insulated copper cables across the ocean floor",
+        "B": "Digital data is transmitted as light signals through optical fibre cables, with repeaters used to strengthen the signal over long distances",
+        "C": "Microwave radio signals are guided through metallic pathways laid under the ocean",
+        "D": "Data are transmitted through acoustic waves using seawater as the transmission medium"
+      },
+      "correctAnswer": "B",
+      "explanation": "Undersea cables use fibre optics and light signals with repeaters."
+    },
+    {
+      "id": 145,
+      "type": "mcq",
+      "text": "Which of the following biological signals is predominantly used by non-invasive brain-computer interfaces to decode neural activity?",
+      "options": {
+        "A": "Electroencephalogram (EEG)",
+        "B": "Electrocardiogram (ECG)",
+        "C": "Electromyogram (EMG)",
+        "D": "Electrooculogram (EOG)"
+      },
+      "correctAnswer": "A",
+      "explanation": "EEG records brain electrical activity non-invasively for BCIs."
+    },
+    {
+      "id": 146,
+      "type": "mcq",
+      "text": "Which of the following best describes anorexia nervosa?",
+      "options": {
+        "A": "An eating disorder characterised by self-imposed starvation, marked weight loss and intense fear of gaining weight",
+        "B": "A disorder involving recurrent binge eating followed by self-induced vomiting",
+        "C": "A condition marked by repeated excessive food intake without compensatory behaviour",
+        "D": "A metabolic disorder causing involuntary weight loss despite increased food intake"
+      },
+      "correctAnswer": "A",
+      "explanation": "Anorexia nervosa involves restrictive eating and fear of weight gain."
+    },
+    {
+      "id": 147,
+      "type": "statements",
+      "question": "Consider the following pairs of medical conditions/ biological factors and their descriptions. How many pairs given above are correctly matched?",
+      "statements": [
+        "Insomnia: Persistent difficulty in initiating or maintaining sleep despite adequate opportunity",
+        "Melatonin: Hormone secreted by the pineal gland that regulates the sleep-wake cycle",
+        "Dyspnoea: Clinical term for shortness of breath or breathing discomfort",
+        "Anosmia: Partial or complete loss of the sense of smell"
+      ],
+      "options": {
+        "A": "Only one pair",
+        "B": "Only two pairs",
+        "C": "Only three pairs",
+        "D": "All four pairs"
+      },
+      "correctAnswer": "D",
+      "explanation": "All four pairs are correctly matched."
+    },
+    {
+      "id": 148,
+      "type": "mcq",
+      "text": "Which of the following best describes a biochemical marker?",
+      "options": {
+        "A": "A physical symptom observed externally on the body surface during clinical examination",
+        "B": "A measurable biological molecule in blood or tissue that indicates a normal or abnormal process in the body",
+        "C": "A radiological image used to detect structural abnormalities in internal organs",
+        "D": "A surgical instrument used to extract tissue samples for laboratory analysis"
+      },
+      "correctAnswer": "B",
+      "explanation": "A biomarker is a measurable indicator of biological state."
+    },
+    {
+      "id": 149,
+      "type": "mcq",
+      "text": "Which of the following diseases is caused by the Herpes Simplex Virus (HSV)?",
+      "options": {
+        "A": "Carcinoma",
+        "B": "Gingivostomatitis",
+        "C": "Rheumatism",
+        "D": "Hepatitis"
+      },
+      "correctAnswer": "B",
+      "explanation": "HSV causes herpetic gingivostomatitis (mouth sores)."
+    },
+    {
+      "id": 150,
+      "type": "match",
+      "question": "Match List-I with List-II:\nList-I (Deficiency)\na. Iodine\nb. Vitamin D\nc. Niacin\nd. Vitamin A\nList-II (Disease/Condition)\n1. Osteomalacia\n2. Pellagra\n3. Xerophthalmia\n4. Goitre",
+      "columnA": [
+        { "key": "a", "value": "Iodine" },
+        { "key": "b", "value": "Vitamin D" },
+        { "key": "c", "value": "Niacin" },
+        { "key": "d", "value": "Vitamin A" }
+      ],
+      "columnB": [
+        { "key": "1", "value": "Osteomalacia" },
+        { "key": "2", "value": "Pellagra" },
+        { "key": "3", "value": "Xerophthalmia" },
+        { "key": "4", "value": "Goitre" }
+      ],
+      "options": {
+        "A": "a-4, b-1, c-2, d-3",
+        "B": "a-4, b-2, c-1, d-3",
+        "C": "a-2, b-4, c-3, d-1",
+        "D": "a-4, b-1, c-3, d-2"
+      },
+      "correctAnswer": "A",
+      "explanation": "Iodine deficiency → goitre (4), Vitamin D deficiency → osteomalacia (1), Niacin deficiency → pellagra (2), Vitamin A deficiency → xerophthalmia (3)."
+    }
+  ]
+}

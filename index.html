@@ -83,7 +83,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 /* TESTS GRID */
 .subjects-grid{width:100%;max-width:960px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 
-/* TEST CARD */
+/* TEST CARD — active */
 .test-card{background:var(--surface);border:1.5px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color 0.2s,box-shadow 0.2s;position:relative;}
 .test-card.available{cursor:pointer;}
 .test-card.available:hover{border-color:var(--gold);box-shadow:0 8px 28px var(--gold-glow);}
@@ -204,9 +204,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .pal-dot{width:10px;height:10px;border-radius:3px;flex-shrink:0;}
 .pal-dot.g{background:var(--green);} .pal-dot.r{background:var(--surface3);border:1px solid var(--border2);}
 .pal-dot.p{background:var(--purple);} .pal-dot.gold{background:var(--gold);}
-
-/* RESPONSIVE */
+/* ═════════════════════════════════════════════════════════════════ */
+/* RESPONSIVE DESIGN — Mobile First, Tablet, Desktop */
+/* ═════════════════════════════════════════════════════════════════ */
 @media(max-width:599px){
+  /* MOBILE: < 600px */
   .subjects-grid{grid-template-columns:1fr;gap:12px;}
   .sh-val{font-size:1.4rem;}
   .sh-lbl{font-size:0.55rem;}
@@ -234,8 +236,16 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
   .btn-next,.btn-submit-all{min-width:50px;padding:8px 14px;}
   .topbar-breadcrumb{font-size:0.62rem;}
   .kb-hint{display:none!important;}
+  .rev-q{font-size:0.78rem;}
+  .rev-opt{font-size:0.73rem;padding:7px 12px;}
+  .modal-body{padding:14px 16px;}
+  .config-panel{padding:14px!important;}
+  .cp-row{margin:10px 0!important;}
+  .cp-input{padding:6px 8px!important;}
+  .start-btn,.tc-start-btn{padding:10px 16px;font-size:0.8rem;min-height:40px;}
 }
 @media(min-width:600px) and (max-width:1023px){
+  /* TABLET: 600px - 1023px */
   .subjects-grid{grid-template-columns:1fr 1fr;gap:14px;}
   .setup-main{padding:18px 16px 28px;}
   .stats-hero{padding:14px 20px;}
@@ -254,6 +264,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
   .quiz-bottombar{padding:10px 14px;gap:8px;}
 }
 @media(min-width:1024px){
+  /* DESKTOP: >= 1024px */
   .subjects-grid{grid-template-columns:repeat(3,1fr);gap:18px;}
   .setup-main{padding:28px 24px 40px;}
   .dashboard-stats{grid-template-columns:repeat(4,1fr);}
@@ -288,6 +299,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .review-item.show{display:block;}
 .rev-meta{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
 .rev-num{font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--text3);}
+.rev-exam{font-size:0.58rem;background:var(--gold-dim);color:var(--gold);border:1px solid rgba(201,168,76,0.3);padding:2px 6px;border-radius:3px;font-weight:700;}
 .rev-correct-badge{font-size:0.62rem;padding:2px 8px;border-radius:4px;font-weight:700;}
 .rev-correct-badge.correct{background:var(--green-dim);color:var(--green);}
 .rev-correct-badge.wrong{background:var(--red-dim);color:var(--red);}
@@ -310,6 +322,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .bank-tag.skip{background:var(--purple-dim);color:var(--purple);border-color:var(--purple);}
 .bank-tag.archive{background:var(--surface3);color:var(--text3);border-color:var(--border2);}
 .bank-times{font-size:0.6rem;color:var(--text3);}
+.bank-btn{font-size:0.63rem;background:transparent;border:1px solid var(--border);color:var(--text3);padding:2px 8px;border-radius:4px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.15s;}
+.bank-btn:hover{border-color:var(--border2);color:var(--text2);}
 .bank-q{font-size:0.82rem;color:var(--text);line-height:1.6;}
 .bank-ans{font-size:0.72rem;color:var(--green);margin-top:5px;}
 .cc-dots{display:flex;gap:4px;align-items:center;margin-top:6px;}
@@ -352,8 +366,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .modal-status.ok{background:var(--green-dim);color:var(--green);border:1px solid var(--green);}
 .modal-status.err{background:var(--red-dim);color:var(--red);border:1px solid var(--red);}
 .modal-status.info{background:var(--blue-dim);color:var(--blue);border:1px solid var(--blue);}
+.sync-pull-bar{background:var(--orange-dim);border:1px solid var(--orange);border-radius:8px;padding:10px 14px;font-size:0.73rem;color:var(--orange);display:none;align-items:center;gap:8px;flex-wrap:wrap;width:100%;max-width:960px;}
+.sync-pull-bar.show{display:flex;}
 #sync-toast{position:fixed;bottom:76px;left:50%;transform:translateX(-50%);background:var(--surface);border:1px solid var(--border);color:var(--text2);padding:7px 18px;border-radius:20px;font-size:0.72rem;z-index:9998;opacity:0;transition:opacity 0.3s;pointer-events:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,0.3);}
 
+/* Back to Subject Practice link */
 .back-link{font-size:0.68rem;color:var(--text3);text-decoration:none;display:flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:var(--surface2);transition:all 0.15s;white-space:nowrap;}
 .back-link:hover{color:var(--text2);border-color:var(--border2);}
 </style>
@@ -375,7 +392,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
     <button class="nav-btn-pill" onclick="showBookmarkScreen()">&#x1F516; <span class="nav-btn-label">Bookmarks</span> <span class="nav-badge-pill" style="background:var(--cyan);" id="bookmark-badge">0</span></button>
     <button class="nav-btn-pill" onclick="showSkipScreen()">&#x23ED; <span class="nav-btn-label">Skips</span> <span class="nav-badge-pill" style="background:var(--purple);" id="skip-badge">0</span></button>
     <button class="nav-btn-pill" onclick="showArchiveScreen()">&#x1F5C3; <span class="nav-btn-label">Archive</span> <span class="nav-badge-pill" style="background:var(--surface3);color:var(--text3);" id="archive-badge">0</span></button>
-    <button class="nav-btn-pill sync-btn-wrap" id="sync-nav-btn" onclick="openSyncModal()">&#x2601; <span class="nav-btn-label">Sync</span><div class="sync-dot offline" id="sync-status-dot" title="Sync Off"></div></button>
+    <button class="nav-btn-pill sync-btn-wrap" id="sync-nav-btn" onclick="openSyncModal()" style="position:relative;">&#x2601; <span class="nav-btn-label">Sync</span><div class="sync-dot offline" id="sync-status-dot" title="Sync Off"></div></button>
     <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" title="Toggle theme">&#x2600;&#xFE0F;</button>
   </div>
 
@@ -388,12 +405,21 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
       <button class="modal-close" onclick="closeSyncModal()">&#x2715;</button>
     </div>
     <div class="modal-body">
-      <div id="sync-view-signin"></div>
+      <div id="sync-view-signin">
+        <div class="modal-desc">Sign in with Google to sync your mistakes, bookmarks &amp; history across all devices automatically.</div>
+        <div style="display:flex;justify-content:center;margin:24px 0 8px;">
+          <button onclick="signInWithGoogle()" id="google-signin-btn" style="display:flex;align-items:center;gap:12px;background:#fff;color:#3c4043;border:1px solid #dadce0;border-radius:8px;padding:12px 24px;font-size:0.95rem;font-family:'DM Sans',sans-serif;font-weight:500;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.2);transition:box-shadow 0.2s;">
+            <svg width="20" height="20" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.08 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-3.59-13.46-8.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
+            Sign in with Google
+          </button>
+        </div>
+        <div class="modal-status" id="sync-modal-status"></div>
+      </div>
       <div id="sync-view-connected" style="display:none;">
         <div style="display:flex;align-items:center;gap:14px;padding:14px;background:var(--surface3);border-radius:10px;margin-bottom:16px;">
           <img id="sync-user-photo" src="" width="40" height="40" style="border-radius:50%;display:none;">
           <div>
-            <div id="sync-user-name" style="font-weight:600;font-size:0.95rem;color:var(--text);"></div>
+            <div id="sync-user-name" style="font-weight:600;font-size:0.95rem;color:var(--text1);"></div>
             <div id="sync-user-email" style="font-size:0.78rem;color:var(--text3);"></div>
           </div>
           <div style="margin-left:auto;font-size:0.75rem;color:var(--green);">✔ Synced</div>
@@ -416,6 +442,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
       <div class="sh-item"><div class="sh-val" id="sh-active">&#8212;</div><div class="sh-lbl">Available</div></div>
       <div class="sh-item"><div class="sh-val" id="sh-questions">&#8212;</div><div class="sh-lbl">Questions</div></div>
     </div>
+    <div class="sync-pull-bar" id="sync-pull-bar">
+      &#x26A0;&#xFE0F; Cloud has newer data &mdash;
+      <button onclick="pullFromCloud(true)" style="background:var(--gold);color:#0a0e14;border:none;padding:4px 12px;border-radius:5px;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;">Pull Cloud Data</button>
+      <button onclick="document.getElementById('sync-pull-bar').classList.remove('show')" style="background:transparent;border:none;color:var(--orange);cursor:pointer;font-size:0.7rem;font-family:'DM Sans',sans-serif;padding:2px;">Dismiss</button>
+    </div>
     <div class="dashboard-card">
       <div class="dashboard-header">
         <h3>Performance Dashboard</h3>
@@ -430,11 +461,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
     </div>
     <div class="section-heading">Choose a Test</div>
     <div id="file-proto-note" style="display:none;margin:0 0 16px;padding:12px 16px;background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.35);border-radius:10px;color:#fed7aa;font-size:13px;line-height:1.55;">
-      <strong style="color:#f97316;">⚠ Opened via file://</strong> &nbsp; Browsers block <code style="background:rgba(0,0,0,0.3);padding:2px 6px;border-radius:4px;">fetch()</code> of local JSON. Run a local server in this folder:&nbsp;
-      <code style="background:rgba(0,0,0,0.3);padding:2px 6px;border-radius:4px;">python3 -m http.server 8000</code>
-      &nbsp;then visit&nbsp;<code style="background:rgba(0,0,0,0.3);padding:2px 6px;border-radius:4px;">http://localhost:8000</code>
-    </div>
-    <div class="subjects-grid" id="subjects-grid"></div>
+  <strong style="color:#f97316;">⚠ Opened via file://</strong> &nbsp; Browsers block <code style="background:rgba(0,0,0,0.3);padding:2px 6px;border-radius:4px;">fetch()</code> of local JSON. Run a local server in this folder:&nbsp;
+  <code style="background:rgba(0,0,0,0.3);padding:2px 6px;border-radius:4px;">python3 -m http.server 8000</code>
+  &nbsp;then visit&nbsp;<code style="background:rgba(0,0,0,0.3);padding:2px 6px;border-radius:4px;">http://localhost:8000</code>
+</div>
+<div class="subjects-grid" id="subjects-grid"></div>
     <div class="config-panel" id="config-panel" style="display:none;"></div>
   </div>
 </div>
@@ -444,7 +475,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
   <div class="quiz-topbar">
     <div class="topbar-breadcrumb" id="topbar-bc">Test Series <span id="topbar-ch"></span></div>
     <div class="topbar-timer" id="timer-display">&#8734;</div>
-    <button class="topbar-btn" onclick="toggleTheme()" id="theme-btn-q" title="Toggle theme">&#x2600;&#xFE0F;</button>
+    <button class="topbar-btn" onclick="toggleTheme()" id="theme-btn-q" title="Toggle theme" style="font-size:0.8rem;padding:5px 10px;">&#x2600;&#xFE0F;</button>
     <button class="topbar-btn" id="pause-btn" onclick="togglePause()">Pause</button>
     <button class="topbar-btn" onclick="confirmHome()">&#x2715; Exit</button>
     <div class="topbar-progress"><div class="topbar-progress-bar" id="progress-bar"></div></div>
@@ -465,10 +496,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
   <div class="quiz-bottombar">
     <button class="nav-action-btn btn-prev" onclick="goToPrev()">&#x2190; Prev</button>
     <button class="nav-action-btn btn-mark" onclick="markForReview()">&#x2691; Mark</button>
-    <button class="nav-action-btn" id="btn-bookmark" onclick="toggleBookmark()" style="background:var(--surface2);color:var(--cyan);border:1px solid var(--border);font-size:0.78rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;padding:8px 14px;border-radius:8px;">&#x1F516;</button>
+    <button class="nav-action-btn" id="btn-bookmark" onclick="toggleBookmark()" style="background:var(--surface2);color:var(--cyan);border:1px solid var(--border);font-size:0.78rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;padding:8px 14px;border-radius:8px;transition:all 0.15s;">&#x1F516;</button>
     <button class="nav-action-btn btn-clear" onclick="clearResponse()">Clear</button>
     <button class="nav-action-btn btn-explain" onclick="toggleExplanation()">Explain</button>
-    <span class="kb-hint" style="font-size:0.62rem;color:var(--text3);background:var(--surface2);border:1px solid var(--border);padding:3px 8px;border-radius:5px;">&#x2423; next opt &middot; &#x23CE; next &middot; B bookmark &middot; P prev</span>
+    <span class="kb-hint" style="font-size:0.62rem;color:var(--text3);background:var(--surface2);border:1px solid var(--border);padding:3px 8px;border-radius:5px;letter-spacing:0.5px;">&#x2423; next opt &middot; &#x23CE; next &middot; B bookmark &middot; P prev</span>
     <div class="spacer"></div>
     <div class="q-stats">
       <span class="q-stat-item">Ans: <span class="stat-ans" id="stat-ans">0</span></span>
@@ -517,13 +548,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 <div class="screen" id="mistake-screen" style="flex-direction:column;align-items:center;padding:16px;min-height:100vh;">
   <div style="width:100%;max-width:760px;display:flex;flex-direction:column;gap:16px;">
     <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
-      <button onclick="backToSetup()" style="background:var(--surface);border:1px solid var(--border);color:var(--text2);padding:7px 12px;border-radius:8px;font-size:0.75rem;cursor:pointer;font-family:'DM Sans',sans-serif;">&#x2190; Back</button>
+      <button onclick="backToSetup()" style="background:var(--surface);border:1px solid var(--border);color:var(--text2);padding:7px 12px;border-radius:8px;font-size:0.75rem;cursor:pointer;font-family:'DM Sans',sans-serif;flex-shrink:0;">&#x2190; Back</button>
       <h2 style="font-family:'Cinzel',serif;font-size:0.95rem;color:var(--text);margin:0;">&#x1F534; Mistakes</h2>
-      <span id="mistake-count-lbl" style="font-size:0.7rem;color:var(--text3);margin-left:auto;"></span>
-      <button onclick="clearAllMistakes()" style="background:var(--red-dim);border:1px solid var(--red);color:var(--red);padding:6px 10px;border-radius:7px;font-size:0.7rem;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;">Archive All</button>
-      <button onclick="practiceFromMistakes()" style="background:var(--gold);color:#0a0e14;border:none;padding:7px 12px;border-radius:8px;font-size:0.7rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;">Practice</button>
+      <span id="mistake-count-lbl" style="font-size:0.7rem;color:var(--text3);margin-left:auto;flex-shrink:0;"></span>
+      <button onclick="clearAllMistakes()" style="background:var(--red-dim);border:1px solid var(--red);color:var(--red);padding:6px 10px;border-radius:7px;font-size:0.7rem;cursor:pointer;font-family:'DM Sans',sans-serif;flex-shrink:0;white-space:nowrap;">Archive All</button>
+      <button onclick="practiceFromMistakes()" style="background:var(--gold);color:#0a0e14;border:none;padding:7px 12px;border-radius:8px;font-size:0.7rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;flex-shrink:0;">Practice</button>
     </div>
-    <div style="font-size:0.68rem;color:var(--text3);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;">&#x1F7E2; Auto-archive after 5 correct answers</div>
+    <div style="font-size:0.68rem;color:var(--text3);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;line-height:1.4;">&#x1F7E2; Auto-archive after 5 correct answers</div>
     <div id="mistake-list" class="bank-list"></div>
   </div>
 </div>
@@ -532,11 +563,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 <div class="screen" id="bookmark-screen" style="flex-direction:column;align-items:center;padding:16px;min-height:100vh;">
   <div style="width:100%;max-width:760px;display:flex;flex-direction:column;gap:16px;">
     <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
-      <button onclick="backToSetup()" style="background:var(--surface);border:1px solid var(--border);color:var(--text2);padding:7px 12px;border-radius:8px;font-size:0.75rem;cursor:pointer;font-family:'DM Sans',sans-serif;">&#x2190; Back</button>
+      <button onclick="backToSetup()" style="background:var(--surface);border:1px solid var(--border);color:var(--text2);padding:7px 12px;border-radius:8px;font-size:0.75rem;cursor:pointer;font-family:'DM Sans',sans-serif;flex-shrink:0;">&#x2190; Back</button>
       <h2 style="font-family:'Cinzel',serif;font-size:0.95rem;color:var(--text);margin:0;">&#x1F516; Bookmarks</h2>
-      <span id="bookmark-count-lbl" style="font-size:0.7rem;color:var(--text3);margin-left:auto;"></span>
-      <button onclick="clearAllBookmarks()" style="background:var(--cyan-dim);border:1px solid var(--cyan);color:var(--cyan);padding:6px 10px;border-radius:7px;font-size:0.7rem;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;">Archive All</button>
-      <button onclick="practiceFromBookmarks()" style="background:var(--gold);color:#0a0e14;border:none;padding:7px 12px;border-radius:8px;font-size:0.7rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;">Practice</button>
+      <span id="bookmark-count-lbl" style="font-size:0.7rem;color:var(--text3);margin-left:auto;flex-shrink:0;"></span>
+      <button onclick="clearAllBookmarks()" style="background:var(--cyan-dim);border:1px solid var(--cyan);color:var(--cyan);padding:6px 10px;border-radius:7px;font-size:0.7rem;cursor:pointer;font-family:'DM Sans',sans-serif;flex-shrink:0;white-space:nowrap;">Archive All</button>
+      <button onclick="practiceFromBookmarks()" style="background:var(--gold);color:#0a0e14;border:none;padding:7px 12px;border-radius:8px;font-size:0.7rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;flex-shrink:0;">Practice</button>
     </div>
     <div id="bookmark-list" class="bank-list"></div>
   </div>
@@ -546,13 +577,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 <div class="screen" id="skip-screen" style="flex-direction:column;align-items:center;padding:16px;min-height:100vh;">
   <div style="width:100%;max-width:760px;display:flex;flex-direction:column;gap:16px;">
     <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
-      <button onclick="backToSetup()" style="background:var(--surface);border:1px solid var(--border);color:var(--text2);padding:7px 12px;border-radius:8px;font-size:0.75rem;cursor:pointer;font-family:'DM Sans',sans-serif;">&#x2190; Back</button>
+      <button onclick="backToSetup()" style="background:var(--surface);border:1px solid var(--border);color:var(--text2);padding:7px 12px;border-radius:8px;font-size:0.75rem;cursor:pointer;font-family:'DM Sans',sans-serif;flex-shrink:0;">&#x2190; Back</button>
       <h2 style="font-family:'Cinzel',serif;font-size:0.95rem;color:var(--text);margin:0;">&#x23ED; Skipped</h2>
-      <span id="skip-count-lbl" style="font-size:0.7rem;color:var(--text3);margin-left:auto;"></span>
-      <button onclick="clearAllSkips()" style="background:var(--purple-dim);border:1px solid var(--purple);color:var(--purple);padding:6px 10px;border-radius:7px;font-size:0.7rem;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;">Archive All</button>
-      <button onclick="practiceFromSkips()" style="background:var(--gold);color:#0a0e14;border:none;padding:7px 12px;border-radius:8px;font-size:0.7rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;">Practice</button>
+      <span id="skip-count-lbl" style="font-size:0.7rem;color:var(--text3);margin-left:auto;flex-shrink:0;"></span>
+      <button onclick="clearAllSkips()" style="background:var(--purple-dim);border:1px solid var(--purple);color:var(--purple);padding:6px 10px;border-radius:7px;font-size:0.7rem;cursor:pointer;font-family:'DM Sans',sans-serif;flex-shrink:0;white-space:nowrap;">Archive All</button>
+      <button onclick="practiceFromSkips()" style="background:var(--gold);color:#0a0e14;border:none;padding:7px 12px;border-radius:8px;font-size:0.7rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;flex-shrink:0;">Practice</button>
     </div>
-    <div style="font-size:0.68rem;color:var(--text3);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;">&#x1F7E2; Auto-archive after 5 correct answers</div>
+    <div style="font-size:0.68rem;color:var(--text3);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;line-height:1.4;">&#x1F7E2; Auto-archive after 5 correct answers</div>
     <div id="skip-list" class="bank-list"></div>
   </div>
 </div>
@@ -561,19 +592,19 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 <div class="screen" id="archive-screen" style="flex-direction:column;align-items:center;padding:16px;min-height:100vh;">
   <div style="width:100%;max-width:760px;display:flex;flex-direction:column;gap:16px;">
     <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
-      <button onclick="backToSetup()" style="background:var(--surface);border:1px solid var(--border);color:var(--text2);padding:7px 12px;border-radius:8px;font-size:0.75rem;cursor:pointer;font-family:'DM Sans',sans-serif;">&#x2190; Back</button>
+      <button onclick="backToSetup()" style="background:var(--surface);border:1px solid var(--border);color:var(--text2);padding:7px 12px;border-radius:8px;font-size:0.75rem;cursor:pointer;font-family:'DM Sans',sans-serif;flex-shrink:0;">&#x2190; Back</button>
       <h2 style="font-family:'Cinzel',serif;font-size:0.95rem;color:var(--text);margin:0;">&#x1F5C3; Archive</h2>
-      <span id="archive-count-lbl" style="font-size:0.7rem;color:var(--text3);margin-left:auto;"></span>
-      <button onclick="clearAllArchive()" style="background:var(--surface2);border:1px solid var(--border);color:var(--text3);padding:6px 10px;border-radius:7px;font-size:0.7rem;cursor:pointer;font-family:'DM Sans',sans-serif;">Clear All</button>
+      <span id="archive-count-lbl" style="font-size:0.7rem;color:var(--text3);margin-left:auto;flex-shrink:0;"></span>
+      <button onclick="clearAllArchive()" style="background:var(--surface2);border:1px solid var(--border);color:var(--text3);padding:6px 10px;border-radius:7px;font-size:0.7rem;cursor:pointer;font-family:'DM Sans',sans-serif;flex-shrink:0;">Clear All</button>
     </div>
-    <div style="font-size:0.68rem;color:var(--text3);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;">Questions mastered (5× correct) or manually cleared</div>
+    <div style="font-size:0.68rem;color:var(--text3);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;line-height:1.4;">Questions mastered (5&#xD7; correct) or manually cleared</div>
     <div id="archive-list" class="bank-list"></div>
   </div>
 </div>
 
 <script>
 // ════════════════════════════════════════════════════════════════
-// TESTS CONFIG
+// TESTS CONFIG — drop test_XX.json into data/tests/ to unlock
 // ════════════════════════════════════════════════════════════════
 const TESTS_CONFIG = [
   {id:'test_01', name:'Test 1',  icon:'📋', file:'data/tests/test_01.json'},
@@ -594,345 +625,202 @@ let allQuestions = [], chapterMap = {}, testDataCache = {};
 let quiz = [], state = {}, quizMeta = {}, timerInterval = null, paused = false, totalSecs = 0;
 let lastResults = [], shuffledOptionOrders = [];
 
-// ─── localStorage helpers (ALL keys renamed to bpsc_*) ────────────
+// ─── localStorage helpers ────────────────────────────────────────
 const LS = {
   get:(k,d={})=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d));}catch(e){return d;}},
   set:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
 };
-const getHistory   = () => LS.get('bpsc_history',   []);
-let   saveHistory  = h  => { LS.set('bpsc_history', h); cloudPushKey('bpsc_history'); };
-const getMistakes  = () => LS.get('bpsc_mistakes',  {});
-let   saveMistakes = m  => { LS.set('bpsc_mistakes', m); cloudPushKey('bpsc_mistakes'); };
-const getBookmarks = () => LS.get('bpsc_bookmarks', {});
-let   saveBookmarks= b  => { LS.set('bpsc_bookmarks', b); cloudPushKey('bpsc_bookmarks'); };
-const getSkips     = () => LS.get('bpsc_skips',     {});
-let   saveSkips    = s  => { LS.set('bpsc_skips', s); cloudPushKey('bpsc_skips'); };
-const getArchive   = () => LS.get('bpsc_archive',   {});
-let   saveArchive  = a  => { LS.set('bpsc_archive', a); cloudPushKey('bpsc_archive'); };
+const getHistory   = () => LS.get('priya_history',   []);
+let   saveHistory  = h  => { LS.set('priya_history', h); syncDataToCloud('history', h); };
+const getMistakes  = () => LS.get('priya_mistakes',  {});
+let   saveMistakes = m  => { LS.set('priya_mistakes', m); syncDataToCloud('mistakes', m); };
+const getBookmarks = () => LS.get('priya_bookmarks', {});
+let   saveBookmarks= b  => { LS.set('priya_bookmarks', b); syncDataToCloud('bookmarks', b); };
+const getSkips     = () => LS.get('priya_skips',     {});
+let   saveSkips    = s  => { LS.set('priya_skips', s); syncDataToCloud('skips', s); };
+const getArchive   = () => LS.get('priya_archive',   {});
+let   saveArchive  = a  => { LS.set('priya_archive', a); syncDataToCloud('archive', a); };
 const MASTERY = 5;
 
 // ════════════════════════════════════════════════════════════════
-// FIREBASE (YOUR PROJECT)
+// CROSS-DEVICE SYNC SYSTEM — IndexedDB + Cloud Sync
 // ════════════════════════════════════════════════════════════════
-const FIREBASE_CFG = {
-  apiKey: "AIzaSyCqDRLDd-V-NnWZZzwgmyoy-cxiHoDSyO8",
-  authDomain: "bpsc-test-series-455e2.firebaseapp.com",
-  projectId: "bpsc-test-series-455e2",
-  storageBucket: "bpsc-test-series-455e2.firebasestorage.app",
-  messagingSenderId: "75236158838",
-  appId: "1:75236158838:web:467d01b976541e2aa99e57",
-  measurementId: "G-YMJKCTWJED"
+const SYNC_CONFIG = {
+  enabled: localStorage.getItem('priya_sync_enabled') === 'true',
+  endpoint: localStorage.getItem('priya_sync_endpoint') || '',
+  deviceId: localStorage.getItem('priya_device_id') || (localStorage.setItem('priya_device_id', 'device_' + Date.now() + '_' + Math.random().toString(36).substr(2,9)), localStorage.getItem('priya_device_id')),
+  lastSyncTime: 0,
+  syncInterval: 30000 // 30 seconds
 };
-let fbDb = null, fbAuth = null, fbUserId = null, syncListeners = [], syncStatus = 'offline';
 
-function getSyncConfig(){ return LS.get('bpsc_sync_cfg', null); }
-function saveSyncConfig(c){ LS.set('bpsc_sync_cfg', c); }
-function setSyncStatus(s){
-  syncStatus = s;
+let syncDB = null;
+
+// Initialize IndexedDB for offline support
+async function initIndexedDB() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open('PriyaTestSeries', 1);
+    req.onerror = () => reject(req.error);
+    req.onsuccess = () => {
+      syncDB = req.result;
+      resolve(syncDB);
+    };
+    req.onupgradeneeded = (e) => {
+      const db = e.target.result;
+      if (!db.objectStoreNames.contains('syncData')) {
+        const store = db.createObjectStore('syncData', { keyPath: 'key' });
+        store.createIndex('timestamp', 'timestamp', { unique: false });
+      }
+    };
+  });
+}
+
+// Save to IndexedDB for backup
+async function saveToIndexedDB(key, data) {
+  if (!syncDB) return;
+  try {
+    const tx = syncDB.transaction(['syncData'], 'readwrite');
+    tx.objectStore('syncData').put({ key, data, timestamp: Date.now() });
+  } catch(e) { console.error('IndexedDB error:', e); }
+}
+
+// Load from IndexedDB if available
+async function loadFromIndexedDB(key) {
+  if (!syncDB) return null;
+  try {
+    return new Promise((resolve) => {
+      const tx = syncDB.transaction(['syncData'], 'readonly');
+      const req = tx.objectStore('syncData').get(key);
+      req.onsuccess = () => resolve(req.result?.data || null);
+      req.onerror = () => resolve(null);
+    });
+  } catch(e) { return null; }
+}
+
+// Sync data to cloud
+async function syncDataToCloud(key, data) {
+  if (!SYNC_CONFIG.enabled || !SYNC_CONFIG.endpoint) return;
+  
+  const payload = {
+    deviceId: SYNC_CONFIG.deviceId,
+    dataKey: key,
+    data: data,
+    timestamp: Date.now()
+  };
+  
+  updateSyncStatus('syncing');
+  
+  try {
+    const response = await fetch(`${SYNC_CONFIG.endpoint}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    
+    if (response.ok) {
+      SYNC_CONFIG.lastSyncTime = Date.now();
+      updateSyncStatus('synced');
+      await saveToIndexedDB(key, data);
+      setTimeout(() => updateSyncStatus('synced'), 2000);
+    } else {
+      updateSyncStatus('error');
+    }
+  } catch(e) {
+    console.error('Sync error:', e);
+    updateSyncStatus('error');
+  }
+}
+
+// Pull data from cloud
+async function pullDataFromCloud() {
+  if (!SYNC_CONFIG.enabled || !SYNC_CONFIG.endpoint) return;
+  
+  updateSyncStatus('syncing');
+  
+  try {
+    const response = await fetch(`${SYNC_CONFIG.endpoint}?deviceId=${SYNC_CONFIG.deviceId}`);
+    if (response.ok) {
+      const cloudData = await response.json();
+      
+      // Merge cloud data with local (cloud takes precedence if newer)
+      if (cloudData.history) LS.set('priya_history', cloudData.history);
+      if (cloudData.mistakes) LS.set('priya_mistakes', cloudData.mistakes);
+      if (cloudData.bookmarks) LS.set('priya_bookmarks', cloudData.bookmarks);
+      if (cloudData.skips) LS.set('priya_skips', cloudData.skips);
+      if (cloudData.archive) LS.set('priya_archive', cloudData.archive);
+      
+      updateAllBadges();
+      updateSyncStatus('synced');
+      showSyncToast('Data synced from cloud ✓');
+      setTimeout(() => updateSyncStatus('synced'), 2000);
+    }
+  } catch(e) {
+    console.error('Pull sync error:', e);
+    updateSyncStatus('error');
+  }
+}
+
+// Update UI sync status
+function updateSyncStatus(status) {
   const dot = document.getElementById('sync-status-dot');
   if (!dot) return;
-  dot.className = 'sync-dot ' + s;
-  const labels = {synced:'Synced ✔', syncing:'Syncing…', error:'Sync Error ⚠', offline:'Sync Off'};
-  dot.title = labels[s] || s;
+  
+  dot.className = 'sync-dot ' + status;
+  const titles = {
+    syncing: 'Syncing...',
+    synced: 'Synced',
+    error: 'Sync failed',
+    offline: 'Offline'
+  };
+  dot.title = titles[status] || 'Sync Off';
 }
-function loadScript(src){
-  return new Promise((res,rej)=>{
-    if (document.querySelector('script[src="'+src+'"]')) { res(); return; }
-    const s = document.createElement('script');
-    s.src = src;
-    s.onload = res;
-    s.onerror = rej;
-    document.head.appendChild(s);
-  });
+
+// Show sync toast notification
+function showSyncToast(msg) {
+  const toast = document.getElementById('sync-toast');
+  if (!toast) return;
+  toast.textContent = msg;
+  toast.style.opacity = '1';
+  setTimeout(() => toast.style.opacity = '0', 3000);
 }
-async function ensureFirebaseSDK(){
-  if (window.firebase && window.firebase.auth) return true;
-  try {
-    await loadScript('https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js');
-    await loadScript('https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js');
-    await loadScript('https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js');
-    return true;
-  } catch(e) { return false; }
-}
-async function initFirebase(){
-  if (window.firebase && window.firebase.apps && window.firebase.apps.find(a => a.name === 'bpsc')) {
-    const app = window.firebase.apps.find(a => a.name === 'bpsc');
-    fbDb = window.firebase.firestore(app);
-    fbAuth = window.firebase.auth(app);
-    return true;
-  }
-  const ok = await ensureFirebaseSDK();
-  if (!ok) return false;
-  try {
-    const app = window.firebase.initializeApp(FIREBASE_CFG, 'bpsc');
-    fbDb = window.firebase.firestore(app);
-    fbAuth = window.firebase.auth(app);
-    return true;
-  } catch(e) {
-    console.error('Firebase init error:', e);
-    return false;
-  }
-}
-async function signInWithGoogle(){
-  const btn = document.getElementById('google-signin-btn');
-  if (btn) { btn.disabled = true; btn.style.opacity = '0.7'; }
-  showSyncModalStatus('Opening Google sign-in…','info');
-  const ok = await initFirebase();
-  if (!ok) {
-    showSyncModalStatus('Firebase init failed.','err');
-    if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
-    return;
-  }
-  try {
-    const provider = new window.firebase.auth.GoogleAuthProvider();
-    const result = await fbAuth.signInWithPopup(provider);
-    const user = result.user;
-    fbUserId = user.uid;
-    const cfg = {userId:user.uid, email:user.email, name:user.displayName, photo:user.photoURL};
-    saveSyncConfig(cfg);
-    showSignedInUI(cfg);
-    setSyncStatus('syncing');
-    await pushAllToCloud();
-    setupRealtimeListeners();
-    setSyncStatus('synced');
-    updateSyncNavBtn(true);
-    showSyncToast('Signed in as ' + user.displayName);
-    setTimeout(() => closeSyncModal(), 1500);
-  } catch(e) {
-    showSyncModalStatus('Sign-in failed: '+e.message,'err');
-    if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
-  }
-}
-function showSignedInUI(cfg){
-  const vs = document.getElementById('sync-view-signin');
-  const vc = document.getElementById('sync-view-connected');
-  if (vs) vs.style.display = 'none';
-  if (vc) vc.style.display = '';
-  document.getElementById('sync-disconnect-btn').style.display = '';
-  if (cfg.name) { const el = document.getElementById('sync-user-name'); if (el) el.textContent = cfg.name; }
-  if (cfg.email) { const el = document.getElementById('sync-user-email'); if (el) el.textContent = cfg.email; }
-  if (cfg.photo) { const img = document.getElementById('sync-user-photo'); if (img) { img.src = cfg.photo; img.style.display = ''; } }
-}
-async function pushAllToCloud(){
-  if (!fbDb || !fbUserId) return;
-  setSyncStatus('syncing');
-  try {
-    const batch = fbDb.batch();
-    ['bpsc_history','bpsc_mistakes','bpsc_bookmarks','bpsc_skips','bpsc_archive'].forEach(k => {
-      const ref = fbDb.collection('users').doc(fbUserId).collection('data').doc(k);
-      batch.set(ref, {payload: JSON.stringify(LS.get(k,{})), updatedAt: Date.now()});
-    });
-    await batch.commit();
-    setSyncStatus('synced');
-  } catch(e) { setSyncStatus('error'); }
-}
-async function pullFromCloud(force){
-  if (!fbDb || !fbUserId) return;
-  try {
-    const snap = await fbDb.collection('users').doc(fbUserId).collection('data').get();
-    snap.forEach(doc => {
-      const data = doc.data();
-      if (!data || !data.payload) return;
-      const key = doc.id;
-      if (!['bpsc_history','bpsc_mistakes','bpsc_bookmarks','bpsc_skips','bpsc_archive'].includes(key)) return;
-      const cloudVal = JSON.parse(data.payload);
-      if (force) {
-        LS.set(key, cloudVal);
-      } else {
-        const local = LS.get(key, {});
-        if (Array.isArray(cloudVal)) {
-          const all = [...(Array.isArray(local)?local:[]), ...cloudVal];
-          const seen = new Set();
-          const merged = all.filter(e => {
-            const k = e.date;
-            if (seen.has(k)) return false;
-            seen.add(k);
-            return true;
-          });
-          merged.sort((a,b) => new Date(b.date) - new Date(a.date));
-          LS.set(key, merged.slice(0,200));
-        } else {
-          LS.set(key, Object.assign({}, local, cloudVal));
-        }
-      }
-    });
-    updateAllBadges();
-    buildDashboard();
-    setSyncStatus('synced');
-    if (force) showSyncToast('✔ Cloud data pulled successfully');
-  } catch(e) { setSyncStatus('error'); }
-}
-function setupRealtimeListeners(){
-  syncListeners.forEach(u => u());
-  syncListeners = [];
-  if (!fbDb || !fbUserId) return;
-  ['bpsc_history','bpsc_mistakes','bpsc_bookmarks','bpsc_skips','bpsc_archive'].forEach(k => {
-    const ref = fbDb.collection('users').doc(fbUserId).collection('data').doc(k);
-    const unsub = ref.onSnapshot(doc => {
-      if (!doc.exists) return;
-      const meta = doc.metadata;
-      if (meta && meta.hasPendingWrites) return;
-      try {
-        const data = doc.data();
-        if (!data || !data.payload) return;
-        const cloudVal = JSON.parse(data.payload);
-        const local = LS.get(k, {});
-        if (JSON.stringify(local) === JSON.stringify(cloudVal)) return;
-        if (Array.isArray(cloudVal)) {
-          const all = [...(Array.isArray(local)?local:[]), ...cloudVal];
-          const seen = new Set();
-          const merged = all.filter(e => {
-            const id = e.date;
-            if (seen.has(id)) return false;
-            seen.add(id);
-            return true;
-          });
-          merged.sort((a,b) => new Date(b.date) - new Date(a.date));
-          LS.set(k, merged.slice(0,200));
-        } else {
-          LS.set(k, Object.assign({}, local, cloudVal));
-        }
-        updateAllBadges();
-        buildDashboard();
-        showSyncToast('☁ Synced from another device');
-        setSyncStatus('synced');
-      } catch(e) {}
-    }, err => { setSyncStatus('error'); });
-    syncListeners.push(unsub);
-  });
-}
-const _pushTimers = {};
-function cloudPushKey(k){
-  if (!fbDb || !fbUserId) return;
-  clearTimeout(_pushTimers[k]);
-  _pushTimers[k] = setTimeout(async () => {
-    setSyncStatus('syncing');
-    try {
-      await fbDb.collection('users').doc(fbUserId).collection('data').doc(k).set({
-        payload: JSON.stringify(LS.get(k,{})), updatedAt: Date.now()
-      });
-      setSyncStatus('synced');
-    } catch(e) { setSyncStatus('error'); }
-  }, 600);
-}
-async function disconnectSync(){
-  if (!confirm('Sign out from cloud sync? Your local data will stay.')) return;
-  syncListeners.forEach(u => u());
-  syncListeners = [];
-  if (fbAuth) try { await fbAuth.signOut(); } catch(e) {}
-  fbDb = null; fbAuth = null; fbUserId = null;
-  localStorage.removeItem('bpsc_sync_cfg');
-  setSyncStatus('offline');
-  updateSyncNavBtn(false);
-  closeSyncModal();
-  showSyncToast('Signed out from cloud sync');
-}
+
+// Open sync modal
 function openSyncModal() {
   const modal = document.getElementById('sync-modal');
   if (!modal) return;
   modal.classList.remove('hidden');
+}
 
-  const cfg = getSyncConfig();
-  const vs = document.getElementById('sync-view-signin');
-  const vc = document.getElementById('sync-view-connected');
-  const discBtn = document.getElementById('sync-disconnect-btn');
-
-  if (cfg && cfg.userId) {
-    if (vs) vs.style.display = 'none';
-    if (vc) vc.style.display = '';
-    if (discBtn) discBtn.style.display = '';
-    document.getElementById('sync-user-name').textContent = cfg.name || 'User';
-    document.getElementById('sync-user-email').textContent = cfg.email || '';
-    const img = document.getElementById('sync-user-photo');
-    if (img && cfg.photo) {
-      img.src = cfg.photo;
-      img.style.display = '';
+// Initialize sync system on page load
+window.addEventListener('load', async () => {
+  try {
+    await initIndexedDB();
+    
+    // Check online status
+    window.addEventListener('online', () => {
+      updateSyncStatus('syncing');
+      pullDataFromCloud();
+    });
+    window.addEventListener('offline', () => {
+      updateSyncStatus('offline');
+    });
+    
+    // Auto-sync every 30 seconds if enabled
+    if (SYNC_CONFIG.enabled) {
+      setInterval(pullDataFromCloud, SYNC_CONFIG.syncInterval);
+      updateSyncStatus('synced');
     }
-  } else {
-    if (vs) {
-      vs.style.display = '';
-      vs.innerHTML = `
-        <div class="modal-desc">Sign in with Google to sync your data across devices.</div>
-        <div style="display:flex; justify-content:center; margin:24px 0 8px;">
-          <button onclick="signInWithGoogle()" id="google-signin-btn"
-            style="display:flex;align-items:center;gap:12px;background:#fff;color:#3c4043;
-                   border:1px solid #dadce0;border-radius:8px;padding:12px 24px;
-                   font-size:0.95rem;font-family:'DM Sans',sans-serif;font-weight:500;
-                   cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.2);">
-            <svg width="20" height="20" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.08 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-3.59-13.46-8.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
-            Sign in with Google
-          </button>
-        </div>
-      `;
-    }
-    if (vc) vc.style.display = 'none';
-    if (discBtn) discBtn.style.display = 'none';
+  } catch(e) {
+    console.error('Sync init error:', e);
   }
-}
-function closeSyncModal(){ document.getElementById('sync-modal').classList.add('hidden'); }
-function showSyncModalStatus(msg,type){
-  const el = document.getElementById('sync-modal-status');
-  if (!el) return;
-  el.textContent = msg;
-  el.className = 'modal-status show ' + type;
-  setTimeout(() => { el.className = 'modal-status'; }, 4000);
-}
-function showSyncToast(msg){
-  const t = document.getElementById('sync-toast');
-  if (!t) return;
-  t.textContent = msg;
-  t.style.opacity = '1';
-  clearTimeout(t._to);
-  t._to = setTimeout(() => { t.style.opacity = '0'; }, 2800);
-}
-function updateSyncNavBtn(connected){
-  const btn = document.getElementById('sync-nav-btn');
-  if (!btn) return;
-  btn.innerHTML = connected
-    ? '☁ <span class="nav-btn-label">Synced</span><div class="sync-dot synced" id="sync-status-dot" title="Synced ✔"></div>'
-    : '☁ <span class="nav-btn-label">Sync</span><div class="sync-dot offline" id="sync-status-dot" title="Sync Off"></div>';
-}
-async function initSyncOnLoad(){
-  const cfg = getSyncConfig();
-  if (!cfg || !cfg.userId) return;
-  updateSyncNavBtn(false);
-  setSyncStatus('syncing');
-  const ok = await initFirebase();
-  if (!ok) { setSyncStatus('error'); return; }
-  fbAuth.onAuthStateChanged(async (user) => {
-    if (user) {
-      fbUserId = user.uid;
-      await pullFromCloud(false);
-      setupRealtimeListeners();
-      setSyncStatus('synced');
-      updateSyncNavBtn(true);
-    } else {
-      setSyncStatus('offline');
-      updateSyncNavBtn(false);
-    }
-  });
-}
+});
 
 // ─── Bank helpers ─────────────────────────────────────────────────
-function archiveQuestion(q,fromBank){ const arc = getArchive(); arc[q.uid] = { q, fromBank, archivedAt: new Date().toISOString() }; saveArchive(arc); updateAllBadges(); }
-function addToMistakes(wr){
-  const b = getMistakes();
-  wr.forEach(r => { const p = b[r.q.uid] || {}; b[r.q.uid] = { q:r.q, userKey:r.userKey, addedAt:p.addedAt||new Date().toISOString(), times:(p.times||0)+1, correctCount:p.correctCount||0 }; });
-  saveMistakes(b); updateAllBadges();
-}
-function addToBookmarks(q){ const b = getBookmarks(); if (b[q.uid]) return; b[q.uid] = { q, addedAt: new Date().toISOString() }; saveBookmarks(b); updateAllBadges(); }
-function removeFromBookmarks(uid, arc=true){ const b = getBookmarks(); if (arc && b[uid]) archiveQuestion(b[uid].q,'bookmark'); delete b[uid]; saveBookmarks(b); updateAllBadges(); }
-function addToSkips(qs){ const b = getSkips(); qs.forEach(q => { const p = b[q.uid] || {}; b[q.uid] = { q, addedAt:p.addedAt||new Date().toISOString(), times:(p.times||0)+1, correctCount:p.correctCount||0 }; }); saveSkips(b); updateAllBadges(); }
-function processCorrectAnswers(cr){
-  const m = getMistakes(), s = getSkips();
-  let mc = false, sc = false;
-  cr.forEach(r => {
-    const uid = r.q.uid;
-    if (m[uid]) { m[uid].correctCount = (m[uid].correctCount||0)+1; if (m[uid].correctCount >= MASTERY) { archiveQuestion(r.q,'mistake'); delete m[uid]; } mc = true; }
-    if (s[uid]) { s[uid].correctCount = (s[uid].correctCount||0)+1; if (s[uid].correctCount >= MASTERY) { archiveQuestion(r.q,'skip'); delete s[uid]; } sc = true; }
-  });
-  if (mc) saveMistakes(m); if (sc) saveSkips(s);
-}
+function archiveQuestion(q,fromBank){const arc=getArchive();arc[q.uid]={q,fromBank,archivedAt:new Date().toISOString()};saveArchive(arc);updateAllBadges();}
+function addToMistakes(wr){const b=getMistakes();wr.forEach(r=>{const p=b[r.q.uid]||{};b[r.q.uid]={q:r.q,userKey:r.userKey,addedAt:p.addedAt||new Date().toISOString(),times:(p.times||0)+1,correctCount:p.correctCount||0};});saveMistakes(b);updateAllBadges();}
+function addToBookmarks(q){const b=getBookmarks();if(b[q.uid])return;b[q.uid]={q,addedAt:new Date().toISOString()};saveBookmarks(b);updateAllBadges();}
+function removeFromBookmarks(uid,arc=true){const b=getBookmarks();if(arc&&b[uid])archiveQuestion(b[uid].q,'bookmark');delete b[uid];saveBookmarks(b);updateAllBadges();}
+function addToSkips(qs){const b=getSkips();qs.forEach(q=>{const p=b[q.uid]||{};b[q.uid]={q,addedAt:p.addedAt||new Date().toISOString(),times:(p.times||0)+1,correctCount:p.correctCount||0};});saveSkips(b);updateAllBadges();}
+function processCorrectAnswers(cr){const m=getMistakes(),s=getSkips();let mc=false,sc=false;cr.forEach(r=>{const uid=r.q.uid;if(m[uid]){m[uid].correctCount=(m[uid].correctCount||0)+1;if(m[uid].correctCount>=MASTERY){archiveQuestion(r.q,'mistake');delete m[uid];}mc=true;}if(s[uid]){s[uid].correctCount=(s[uid].correctCount||0)+1;if(s[uid].correctCount>=MASTERY){archiveQuestion(r.q,'skip');delete s[uid];}sc=true;}});if(mc)saveMistakes(m);if(sc)saveSkips(s);}
 function updateAllBadges(){
   document.getElementById('mistake-badge').textContent  = Object.keys(getMistakes()).length;
   document.getElementById('bookmark-badge').textContent = Object.keys(getBookmarks()).length;
@@ -941,56 +829,82 @@ function updateAllBadges(){
 }
 
 // ════════════════════════════════════════════════════════════════
+// FLAT-SCHEMA PARSER  (test_XX.json format)
+// q.text, q.correctAnswer = KEY (A/B/C/D), q.options, q.explanation
+// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════════════
 // QUESTION TYPE FORMATTERS
 // ════════════════════════════════════════════════════════════════
 const questionFormatters = {
   mcq: (q) => q.text || q.question || '',
+  
   assertion_reason: (q) => `
     <strong style="color:var(--gold);">Assertion (A):</strong> ${q.assertion || ''}<br><br>
     <strong style="color:var(--gold);">Reason (R):</strong> ${q.reason || ''}
   `,
+  
   statements: (q) => {
-    const romanNumerals = ['I','II','III','IV','V','VI','VII','VIII'];
-    const statementsHtml = (q.statements || []).map((stmt, i) => `<div style="margin:8px 0;padding:8px 12px;background:var(--surface2);border-left:3px solid var(--gold);border-radius:4px;"><strong>${romanNumerals[i]}.</strong> ${stmt}</div>`).join('');
+    const romanNumerals = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
+    const statementsHtml = (q.statements || []).map((stmt, i) => {
+      return `<div style="margin:8px 0;padding:8px 12px;background:var(--surface2);border-left:3px solid var(--gold);border-radius:4px;"><strong>${romanNumerals[i]}.</strong> ${stmt}</div>`;
+    }).join('');
     const questionPart = q.question ? q.question.split('\n')[0] : 'Consider the following statements:';
     return `<div>${questionPart}</div>${statementsHtml}`;
   },
+  
   match: (q) => {
-    const colAHtml = (q.columnA || []).map(item => `<div style="padding:6px 0;"><strong>${item.key}.</strong> ${item.value}</div>`).join('');
-    const colBHtml = (q.columnB || []).map(item => `<div style="padding:6px 0;"><strong>${item.key}.</strong> ${item.value}</div>`).join('');
-    return `<div style="margin-bottom:12px;"><strong style="color:var(--gold);">Match the Following</strong></div>
+    const colAHtml = (q.columnA || []).map(item => 
+      `<div style="padding:6px 0;"><strong>${item.key}.</strong> ${item.value}</div>`
+    ).join('');
+    const colBHtml = (q.columnB || []).map(item => 
+      `<div style="padding:6px 0;"><strong>${item.key}.</strong> ${item.value}</div>`
+    ).join('');
+    
+    return `
+      <div style="margin-bottom:12px;"><strong style="color:var(--gold);">Match the Following</strong></div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-        <div><div style="font-weight:700;color:var(--gold);margin-bottom:8px;font-size:0.9rem;">Column A</div>${colAHtml}</div>
-        <div><div style="font-weight:700;color:var(--gold);margin-bottom:8px;font-size:0.9rem;">Column B</div>${colBHtml}</div>
-      </div>`;
+        <div>
+          <div style="font-weight:700;color:var(--gold);margin-bottom:8px;font-size:0.9rem;">Column A</div>
+          ${colAHtml}
+        </div>
+        <div>
+          <div style="font-weight:700;color:var(--gold);margin-bottom:8px;font-size:0.9rem;">Column B</div>
+          ${colBHtml}
+        </div>
+      </div>
+    `;
   }
 };
 
 // ════════════════════════════════════════════════════════════════
-// FLAT-SCHEMA PARSER
+// FLAT-SCHEMA PARSER  (test_XX.json format)
+// q.text, q.correctAnswer = KEY (A/B/C/D), q.options, q.explanation
 // ════════════════════════════════════════════════════════════════
-function processTestData(data, testId, testName){
+function processTestData(data, testId, testName) {
   allQuestions = []; chapterMap = {};
-  const pseudoChapter = testName;
+  const pseudoChapter = testName; // single pseudo-chapter = test name
   chapterMap[pseudoChapter] = [];
   let idx = 0;
   (data.questions || []).forEach(q => {
     const correctKey = q.correctAnswer || 'A';
     const qType = q.type || 'mcq';
+    
+    // Get formatter function, default to mcq if type not found
     const formatter = questionFormatters[qType] || questionFormatters.mcq;
     const questionText = formatter(q);
+    
     const internal = {
-      uid: `${testId}_${q.id || idx}`,
-      _subjectId: testId,
-      chapter: pseudoChapter,
-      exam: testName,
-      year: '',
-      question: questionText,
-      options: q.options || {},
-      correctKey: correctKey,
+      uid:           `${testId}_${q.id || idx}`,
+      _subjectId:    testId,
+      chapter:       pseudoChapter,
+      exam:          testName,
+      year:          '',
+      question:      questionText,
+      options:       q.options || {},
+      correctKey:    correctKey,
       correctAnswer: q.options?.[correctKey] || '',
-      explanation: q.explanation || '',
-      type: qType
+      explanation:   q.explanation || '',
+      type:          qType
     };
     allQuestions.push(internal);
     chapterMap[pseudoChapter].push(internal);
@@ -999,31 +913,42 @@ function processTestData(data, testId, testName){
 }
 
 // ════════════════════════════════════════════════════════════════
-// TESTS GRID
+// TESTS GRID — fetch each test, build active or locked card
 // ════════════════════════════════════════════════════════════════
-function buildSubjectsGrid(){
+function buildSubjectsGrid() {
   const grid = document.getElementById('subjects-grid');
   grid.innerHTML = '';
   let activeCount = 0, totalQs = 0;
-  if (typeof location !== 'undefined' && location.protocol === 'file:') {
+
+  // Helpful note when opened directly via file:// (browsers block fetch then)
+  if (typeof location!=='undefined' && location.protocol==='file:') {
     const note = document.getElementById('file-proto-note');
     if (note) note.style.display = 'block';
   }
-  const probes = TESTS_CONFIG.map(async (t) => {
+
+  // Probe all tests in parallel, then render
+  const probes = TESTS_CONFIG.map(async (t, i) => {
     let count = null;
     try {
       const resp = await fetch(t.file);
-      if (resp.ok) { const data = await resp.json(); count = (data.questions || []).length; testDataCache[t.id] = data; }
+      if (resp.ok) {
+        const data = await resp.json();
+        count = (data.questions || []).length;
+        testDataCache[t.id] = data;
+      }
     } catch(e) {}
-    return { t, count };
+    return { t, i, count };
   });
+
   Promise.all(probes).then(results => {
     results.forEach(({ t, count }) => {
       const available = count !== null;
       if (available) { activeCount++; totalQs += count; }
+
       const card = document.createElement('div');
       card.className = `test-card ${available ? 'available' : 'locked'}`;
       card.id = 'tc-' + t.id;
+
       if (available) {
         card.innerHTML = `
           <div class="tc-top">
@@ -1031,26 +956,35 @@ function buildSubjectsGrid(){
             <div class="tc-info">
               <div class="tc-name">${t.name}</div>
               ${t.subtitle ? `<div class="tc-subtitle">${t.subtitle}</div>` : ''}
-              <div class="tc-meta-row"><span class="tc-pill qs">${count} Qs</span></div>
+              <div class="tc-meta-row">
+                <span class="tc-pill qs">${count} Qs</span>
+              </div>
             </div>
           </div>
           <div class="tc-action-row">
             <button class="tc-start-btn" onclick="openTestConfig('${t.id}')">Start Test &#x2192;</button>
           </div>`;
       } else {
+        const isFileProto = (typeof location!=='undefined' && location.protocol==='file:');
+        const lockedPill = isFileProto ? 'Run via local server' : 'Coming Soon';
         card.innerHTML = `
           <div class="tc-top">
             <div class="tc-icon-wrap" style="opacity:0.4;">🔒</div>
             <div class="tc-info">
               <div class="tc-name" style="color:var(--text3);">${t.name}</div>
               ${t.subtitle ? `<div class="tc-subtitle">${t.subtitle}</div>` : ''}
-              <div class="tc-meta-row"><span class="tc-pill">Coming Soon</span></div>
+              <div class="tc-meta-row">
+                <span class="tc-pill">${lockedPill}</span>
+              </div>
             </div>
           </div>
           <div class="tc-locked-msg">🔒 Data not yet added</div>`;
       }
+
       grid.appendChild(card);
     });
+
+    // Update hero counters
     document.getElementById('sh-tests').textContent    = TESTS_CONFIG.length;
     document.getElementById('sh-active').textContent   = activeCount > 0 ? activeCount : '—';
     document.getElementById('sh-questions').textContent= totalQs > 0 ? totalQs.toLocaleString() : '—';
@@ -1058,15 +992,18 @@ function buildSubjectsGrid(){
 }
 
 // ════════════════════════════════════════════════════════════════
-// CONFIG PANEL
+// CONFIG PANEL — shown when user clicks "Start Test"
 // ════════════════════════════════════════════════════════════════
-function openTestConfig(testId){
+function openTestConfig(testId) {
   const t = TESTS_CONFIG.find(x => x.id === testId);
   if (!t) return;
-  currentTestId = testId; currentTestName = t.name;
+  currentTestId   = testId;
+  currentTestName = t.name;
+
   const data = testDataCache[testId];
   if (!data) { alert('Test data not loaded. Please refresh.'); return; }
   processTestData(data, testId, t.name);
+
   const pool = allQuestions;
   const cp = document.getElementById('config-panel');
   cp.style.display = '';
@@ -1094,26 +1031,36 @@ function openTestConfig(testId){
           <span class="toggle-lbl">Shuffle Options</span>
         </label>
       </div>
-      <div class="cp-row" style="font-size:0.72rem;color:var(--text3);">&#x1F4CB; ${pool.length} questions &bull; Full mock test</div>
-      <div class="cp-row"><button class="start-btn" onclick="startTestQuiz()">Begin Test &#x2192;</button></div>
+      <div class="cp-row" style="font-size:0.72rem;color:var(--text3);">
+        &#x1F4CB; ${pool.length} questions &bull; Full mock test
+      </div>
+      <div class="cp-row">
+        <button class="start-btn" onclick="startTestQuiz()">Begin Test &#x2192;</button>
+      </div>
     </div>`;
+
   setTimeout(() => { cp.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 80);
 }
 
-function hideConfigPanel(){ const cp = document.getElementById('config-panel'); if (cp) cp.style.display = 'none'; }
+function hideConfigPanel() {
+  const cp = document.getElementById('config-panel');
+  if (cp) cp.style.display = 'none';
+}
 
 // ════════════════════════════════════════════════════════════════
-// START QUIZ
+// START QUIZ (from test config)
 // ════════════════════════════════════════════════════════════════
-function startTestQuiz(){
+function startTestQuiz() {
   let pool = [...allQuestions];
   if (document.getElementById('toggle-shuffle')?.checked) pool = shuffle(pool);
+
   const doSO = document.getElementById('toggle-shuffle-opts')?.checked || false;
-  const mins = parseInt(document.getElementById('timer-mins')?.value || 0);
+  const mins  = parseInt(document.getElementById('timer-mins')?.value || 0);
+
   _launchQuiz(pool, currentTestName, mins, doSO, null);
 }
 
-function _launchQuiz(pool, label, mins, shuffleOpts, mode){
+function _launchQuiz(pool, label, mins, shuffleOpts, mode) {
   if (!pool.length) { alert('No questions found!'); return; }
   quiz = pool;
   quizMeta = { mode, testId: currentTestId, chapter: label, startTime: new Date() };
@@ -1129,10 +1076,14 @@ function _launchQuiz(pool, label, mins, shuffleOpts, mode){
     return shuffleOpts ? shuffle([...keys]) : keys;
   });
   totalSecs = mins * 60;
+
   const t = document.documentElement.getAttribute('data-theme') || 'dark';
   const qBtn = document.getElementById('theme-btn-q');
   if (qBtn) qBtn.textContent = t === 'light' ? '🌙' : '☀️';
-  document.getElementById('topbar-bc').innerHTML = `Test Series <span>· ${label.substring(0,45)}${label.length>45?'…':''}</span>`;
+
+  document.getElementById('topbar-bc').innerHTML =
+    `Test Series <span>· ${label.substring(0, 45)}${label.length > 45 ? '…' : ''}</span>`;
+
   showScreen('quiz-screen');
   renderQuestion(); renderPalette(); updateStats();
   clearInterval(timerInterval); paused = false;
@@ -1142,24 +1093,28 @@ function _launchQuiz(pool, label, mins, shuffleOpts, mode){
   else document.getElementById('timer-display').textContent = '∞';
 }
 
-function practiceFromBank(bank, mode){
+// Bank practice (mistakes / bookmarks / skips / wrong)
+function practiceFromBank(bank, mode) {
   const pool = Object.values(bank).map(e => e.q);
   if (!pool.length) { alert('No questions in this bank!'); return; }
+  // Rebuild allQuestions / chapterMap from pool so banks still work
   allQuestions = pool;
   chapterMap = {};
   pool.forEach(q => { if (!chapterMap[q.chapter]) chapterMap[q.chapter] = []; chapterMap[q.chapter].push(q); });
-  currentTestId = pool[0]._subjectId || '';
+  currentTestId   = pool[0]._subjectId || '';
   currentTestName = mode;
   _launchQuiz(shuffle([...pool]), mode, 0, false, mode);
 }
 
-// ═══════ QUIZ ENGINE ═══════════════════
-function renderQuestion(){
+// ═══════ QUIZ ENGINE (identical to index.html) ═══════════════════
+
+function renderQuestion() {
   const i = state.current, q = quiz[i];
   const optionKeys = shuffledOptionOrders[i] || Object.keys(q.options);
   const answered = state.answers[i], isMarked = state.marked[i];
-  const pct = ((i+1)/quiz.length)*100;
-  document.getElementById('progress-bar').style.width = pct+'%';
+  const pct = ((i + 1) / quiz.length) * 100;
+  document.getElementById('progress-bar').style.width = pct + '%';
+
   const examLabel = [q.exam, q.year && q.year !== 'Unknown' && q.year !== q.exam ? q.year : ''].filter(Boolean).join(' · ');
   let optHtml = optionKeys.map(key => {
     const text = q.options[key]; if (!text) return '';
@@ -1167,10 +1122,12 @@ function renderQuestion(){
     if (answered === key) cls += ' selected';
     return `<button class="${cls}" onclick="selectOption('${key}')"><span class="opt-text">${text}</span></button>`;
   }).join('');
-  const isLast = (i === quiz.length-1);
+
+  const isLast = (i === quiz.length - 1);
   const inlineBtn = isLast
     ? `<div style="display:flex;justify-content:flex-end;margin-top:8px;"><button onclick="submitQuiz()" style="padding:9px 22px;background:var(--green);color:#fff;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:700;border:none;border-radius:8px;cursor:pointer;">Submit</button></div>`
     : `<div style="display:flex;justify-content:flex-end;margin-top:8px;"><button onclick="saveAndNext()" style="padding:9px 22px;background:var(--gold);color:#0a0e14;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:700;border:none;border-radius:8px;cursor:pointer;">Next →</button></div>`;
+
   document.getElementById('question-area').innerHTML = `
     <div class="q-header">
       <span class="q-num">Q ${i+1} / ${quiz.length}</span>
@@ -1184,7 +1141,8 @@ function renderQuestion(){
       <div class="exp-header"><span class="exp-title">Explanation</span><span class="exp-correct-ans">✓ ${q.correctAnswer}</span></div>
       <div class="exp-body">${q.explanation || 'No explanation available.'}</div>
     </div>`;
-  if (i === quiz.length-1) {
+
+  if (i === quiz.length - 1) {
     document.getElementById('btn-next').style.display = 'none';
     document.getElementById('btn-submit').style.display = '';
   } else {
@@ -1196,20 +1154,20 @@ function renderQuestion(){
     const isB = !!bmarks[quiz[i]?.uid];
     bBtn.textContent = isB ? '🔖 ✓' : '🔖';
     bBtn.style.borderColor = isB ? 'var(--cyan)' : 'var(--border)';
-    bBtn.style.background = isB ? 'var(--cyan-dim)' : 'var(--surface2)';
+    bBtn.style.background  = isB ? 'var(--cyan-dim)' : 'var(--surface2)';
   }
 }
 
-function selectOption(key){ state.answers[state.current] = key; renderQuestion(); renderPalette(); updateStats(); }
-function toggleBookmark(){ const q = quiz[state.current]; if (!q) return; const b = getBookmarks(); if (b[q.uid]) removeFromBookmarks(q.uid, false); else addToBookmarks(q); renderQuestion(); }
-function saveAndNext(){ if (state.current < quiz.length-1) { state.current++; state.visited[state.current] = true; renderQuestion(); renderPalette(); updateStats(); } }
-function goToPrev(){ if (state.current > 0) { state.current--; renderQuestion(); renderPalette(); updateStats(); } }
-function markForReview(){ state.marked[state.current] = !state.marked[state.current]; renderQuestion(); renderPalette(); updateStats(); }
-function clearResponse(){ state.answers[state.current] = null; renderQuestion(); renderPalette(); updateStats(); }
+function selectOption(key) { state.answers[state.current] = key; renderQuestion(); renderPalette(); updateStats(); }
+function toggleBookmark()   { const q = quiz[state.current]; if (!q) return; const b = getBookmarks(); if (b[q.uid]) removeFromBookmarks(q.uid, false); else addToBookmarks(q); renderQuestion(); }
+function saveAndNext()      { if (state.current < quiz.length - 1) { state.current++; state.visited[state.current] = true; renderQuestion(); renderPalette(); updateStats(); } }
+function goToPrev()         { if (state.current > 0) { state.current--; renderQuestion(); renderPalette(); updateStats(); } }
+function markForReview()    { state.marked[state.current] = !state.marked[state.current]; renderQuestion(); renderPalette(); updateStats(); }
+function clearResponse()    { state.answers[state.current] = null; renderQuestion(); renderPalette(); updateStats(); }
 function toggleExplanation(){ document.getElementById('explanation')?.classList.toggle('show'); }
 
-function renderPalette(){
-  document.getElementById('palette-grid').innerHTML = quiz.map((q,i) => {
+function renderPalette() {
+  document.getElementById('palette-grid').innerHTML = quiz.map((q, i) => {
     let cls = 'pal-btn';
     if (i === state.current) cls += ' current';
     else if (state.answers[i] && state.marked[i]) cls += ' answered-marked';
@@ -1219,20 +1177,32 @@ function renderPalette(){
     return `<button class="${cls}" onclick="jumpTo(${i})">${i+1}</button>`;
   }).join('');
 }
-function jumpTo(i){ state.current = i; state.visited[i] = true; renderQuestion(); renderPalette(); updateStats(); }
-function updateStats(){ const ans = state.answers.filter(a => a !== null).length, mark = state.marked.filter(Boolean).length, skip = quiz.length - ans; document.getElementById('stat-ans').textContent = ans; document.getElementById('stat-skip').textContent = skip; document.getElementById('stat-mark').textContent = mark; }
-function startTimer(){ let remaining = totalSecs; document.getElementById('timer-display').textContent = formatTime(remaining); timerInterval = setInterval(() => { if (paused) return; remaining--; document.getElementById('timer-display').textContent = formatTime(remaining); if (remaining <= 60) document.getElementById('timer-display').classList.add('urgent'); if (remaining <= 0) { clearInterval(timerInterval); submitQuiz(); } }, 1000); }
-function togglePause(){ paused = !paused; document.getElementById('pause-btn').textContent = paused ? 'Resume' : 'Pause'; }
-function formatTime(s){ const m = Math.floor(s/60), sec = s%60; return `${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`; }
-function formatDuration(ms){ const s = Math.floor(ms/1000), m = Math.floor(s/60), sec = s%60; return m>0 ? `${m}m ${sec}s` : `${sec}s`; }
 
-function submitQuiz(){
+function jumpTo(i)   { state.current = i; state.visited[i] = true; renderQuestion(); renderPalette(); updateStats(); }
+function updateStats(){ const ans = state.answers.filter(a => a !== null).length, mark = state.marked.filter(Boolean).length, skip = quiz.length - ans; document.getElementById('stat-ans').textContent = ans; document.getElementById('stat-skip').textContent = skip; document.getElementById('stat-mark').textContent = mark; }
+
+function startTimer() {
+  let remaining = totalSecs;
+  document.getElementById('timer-display').textContent = formatTime(remaining);
+  timerInterval = setInterval(() => {
+    if (paused) return;
+    remaining--;
+    document.getElementById('timer-display').textContent = formatTime(remaining);
+    if (remaining <= 60) document.getElementById('timer-display').classList.add('urgent');
+    if (remaining <= 0) { clearInterval(timerInterval); submitQuiz(); }
+  }, 1000);
+}
+function togglePause()    { paused = !paused; document.getElementById('pause-btn').textContent = paused ? 'Resume' : 'Pause'; }
+function formatTime(s)    { const m = Math.floor(s / 60), sec = s % 60; return `${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`; }
+function formatDuration(ms){ const s = Math.floor(ms/1000), m = Math.floor(s/60), sec = s%60; return m > 0 ? `${m}m ${sec}s` : `${sec}s`; }
+
+function submitQuiz() {
   const skippedCount = state.answers.filter(a => a === null).length;
-  if (skippedCount > 0) { const go = confirm(`${skippedCount} question${skippedCount!==1?'s are':' is'} unanswered. Submit anyway?`); if (!go) return; }
+  if (skippedCount > 0) { const go = confirm(`${skippedCount} question${skippedCount !== 1 ? 's are' : ' is'} unanswered. Submit anyway?`); if (!go) return; }
   clearInterval(timerInterval);
   const elapsed = new Date() - quizMeta.startTime;
   let correct = 0, wrong = 0;
-  lastResults = quiz.map((q,i) => {
+  lastResults = quiz.map((q, i) => {
     const userKey = state.answers[i], isCorrect = userKey === q.correctKey, isSkipped = userKey === null;
     if (isCorrect) correct++; else if (!isSkipped) wrong++;
     return { q, userKey, isCorrect, isSkipped };
@@ -1247,43 +1217,43 @@ function submitQuiz(){
   if (wr.length) addToMistakes(wr);
   if (sr.length) addToSkips(sr.map(r => r.q));
   if (cr.length) processCorrectAnswers(cr);
-  const pct = Math.round(correct/quiz.length*100);
+  const pct  = Math.round(correct / quiz.length * 100);
   const skip = quiz.length - correct - wrong;
   document.getElementById('res-eyebrow').textContent = currentTestName + ' · Result';
-  document.getElementById('res-score').textContent = pct+'%';
-  document.getElementById('res-score').style.color = pct>=70?'var(--green)':pct>=50?'var(--gold)':'var(--red)';
-  document.getElementById('res-grade').textContent = pct>=80?'🏆 Excellent!':pct>=60?'✅ Good Performance':pct>=40?'⚡ Keep Practicing':'📖 Needs More Practice';
-  document.getElementById('rs-correct').textContent = correct;
-  document.getElementById('rs-wrong').textContent = wrong;
-  document.getElementById('rs-skip').textContent = skip;
-  document.getElementById('rs-time').textContent = formatDuration(elapsed);
-  document.getElementById('btn-retry-wrong').style.display = wrong>0?'':'none';
+  document.getElementById('res-score').textContent   = pct + '%';
+  document.getElementById('res-score').style.color   = pct >= 70 ? 'var(--green)' : pct >= 50 ? 'var(--gold)' : 'var(--red)';
+  document.getElementById('res-grade').textContent   = pct >= 80 ? '🏆 Excellent!' : pct >= 60 ? '✅ Good Performance' : pct >= 40 ? '⚡ Keep Practicing' : '📖 Needs More Practice';
+  document.getElementById('rs-correct').textContent  = correct;
+  document.getElementById('rs-wrong').textContent    = wrong;
+  document.getElementById('rs-skip').textContent     = skip;
+  document.getElementById('rs-time').textContent     = formatDuration(elapsed);
+  document.getElementById('btn-retry-wrong').style.display = wrong > 0 ? '' : 'none';
   buildReview('all');
   showScreen('result-screen');
   buildDashboard();
 }
 
-function retryWrong(){
+function retryWrong() {
   const wrong = lastResults.filter(r => !r.isCorrect && !r.isSkipped).map(r => r.q);
   if (!wrong.length) return;
   _launchQuiz(wrong, currentTestName + ' (Retry Wrong)', 0, false, 'wrong');
 }
 
-function buildReview(filter){
-  document.getElementById('review-body').innerHTML = lastResults.map((r,idx) => {
+function buildReview(filter) {
+  document.getElementById('review-body').innerHTML = lastResults.map((r, idx) => {
     const { q, userKey, isCorrect, isSkipped } = r;
     const status = isSkipped ? 'skipped' : isCorrect ? 'correct' : 'wrong';
-    const show = filter === 'all' || filter === status;
+    const show   = filter === 'all' || filter === status;
     const optKeys = shuffledOptionOrders[idx] || Object.keys(q.options);
     const optHtml = optKeys.map(k => {
       if (!q.options[k]) return '';
       let cls = 'rev-opt';
-      if (k === q.correctKey) cls += ' correct-ans';
+      if (k === q.correctKey)  cls += ' correct-ans';
       else if (k === userKey && !isCorrect) cls += ' user-wrong';
       return `<div class="${cls}">${q.options[k]}</div>`;
     }).join('');
-    return `<div class="review-item ${show?'show':''}" data-status="${status}">
-      <div class="rev-meta"><span class="rev-num">Q${idx+1}</span><span class="rev-correct-badge ${status}">${isSkipped?'SKIPPED':isCorrect?'CORRECT':'WRONG'}</span></div>
+    return `<div class="review-item ${show ? 'show' : ''}" data-status="${status}">
+      <div class="rev-meta"><span class="rev-num">Q${idx+1}</span><span class="rev-correct-badge ${status}">${isSkipped ? 'SKIPPED' : isCorrect ? 'CORRECT' : 'WRONG'}</span></div>
       <div class="rev-q">${q.question}</div>
       <div class="rev-options">${optHtml}</div>
       ${q.explanation ? `<div class="rev-exp">${q.explanation}</div>` : ''}
@@ -1291,60 +1261,60 @@ function buildReview(filter){
   }).join('');
 }
 
-function filterReview(filter, btn){
+function filterReview(filter, btn) {
   document.querySelectorAll('.rflt-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   document.querySelectorAll('.review-item').forEach(el => { el.classList.toggle('show', filter === 'all' || el.dataset.status === filter); });
 }
 
 // ─── Bank screens ─────────────────────────────────────────────────
-function bankItemHtml(e, type){
-  const dots = Array.from({length:MASTERY}, (_,i) => `<div class="cc-dot ${i < (e.correctCount||0) ? 'filled' : ''}"></div>`).join('');
+function bankItemHtml(e, type) {
+  const dots = Array.from({length: MASTERY}, (_, i) => `<div class="cc-dot ${i < (e.correctCount||0) ? 'filled' : ''}"></div>`).join('');
   return `<div class="bank-item"><div class="bank-item-top"><span class="bank-tag ${type}">${type.toUpperCase()}</span><span style="font-size:0.6rem;background:var(--gold-dim);color:var(--gold);border:1px solid rgba(201,168,76,0.3);padding:2px 6px;border-radius:3px;font-weight:700;">${e.q.chapter||''}</span>${e.times?`<span class="bank-times">x${e.times}</span>`:''}<span class="bank-times" style="margin-left:auto;">${e.addedAt?new Date(e.addedAt).toLocaleDateString():''}</span></div><div class="bank-q">${e.q.question}</div><div class="bank-ans">✓ ${e.q.correctAnswer}</div><div class="cc-dots">${dots}<span class="cc-label">to mastery</span></div></div>`;
 }
 
-function showMistakeScreen(){ const b=getMistakes(), items=Object.values(b); document.getElementById('mistake-count-lbl').textContent=`${items.length} question${items.length!==1?'s':''}`; document.getElementById('mistake-list').innerHTML = items.length ? items.map(e=>bankItemHtml(e,'mistake')).join('') : '<div style="padding:30px;text-align:center;color:var(--text3);font-size:0.82rem;">No mistakes yet! 🎉</div>'; showScreen('mistake-screen'); }
-function clearAllMistakes(){ if(!confirm('Archive all mistakes?')) return; const b=getMistakes(); Object.values(b).forEach(e=>archiveQuestion(e.q,'mistake')); saveMistakes({}); updateAllBadges(); showMistakeScreen(); }
-function practiceFromMistakes(){ practiceFromBank(getMistakes(),'Mistake Practice'); }
+function showMistakeScreen(){const b=getMistakes(),items=Object.values(b);document.getElementById('mistake-count-lbl').textContent=`${items.length} question${items.length!==1?'s':''}`;document.getElementById('mistake-list').innerHTML=items.length?items.map(e=>bankItemHtml(e,'mistake')).join(''):'<div style="padding:30px;text-align:center;color:var(--text3);font-size:0.82rem;">No mistakes yet! 🎉</div>';showScreen('mistake-screen');}
+function clearAllMistakes(){if(!confirm('Archive all mistakes?'))return;const b=getMistakes();Object.values(b).forEach(e=>archiveQuestion(e.q,'mistake'));saveMistakes({});updateAllBadges();showMistakeScreen();}
+function practiceFromMistakes(){practiceFromBank(getMistakes(),'Mistake Practice');}
 
-function showBookmarkScreen(){ const b=getBookmarks(), items=Object.values(b); document.getElementById('bookmark-count-lbl').textContent=`${items.length} question${items.length!==1?'s':''}`; document.getElementById('bookmark-list').innerHTML = items.length ? items.map(e=>bankItemHtml(e,'bookmark')).join('') : '<div style="padding:30px;text-align:center;color:var(--text3);font-size:0.82rem;">No bookmarks yet! Tap 🔖 during a quiz.</div>'; showScreen('bookmark-screen'); }
-function clearAllBookmarks(){ if(!confirm('Archive all bookmarks?')) return; const b=getBookmarks(); Object.values(b).forEach(e=>archiveQuestion(e.q,'bookmark')); saveBookmarks({}); updateAllBadges(); showBookmarkScreen(); }
-function practiceFromBookmarks(){ practiceFromBank(getBookmarks(),'Bookmark Practice'); }
+function showBookmarkScreen(){const b=getBookmarks(),items=Object.values(b);document.getElementById('bookmark-count-lbl').textContent=`${items.length} question${items.length!==1?'s':''}`;document.getElementById('bookmark-list').innerHTML=items.length?items.map(e=>bankItemHtml(e,'bookmark')).join(''):'<div style="padding:30px;text-align:center;color:var(--text3);font-size:0.82rem;">No bookmarks yet! Tap 🔖 during a quiz.</div>';showScreen('bookmark-screen');}
+function clearAllBookmarks(){if(!confirm('Archive all bookmarks?'))return;const b=getBookmarks();Object.values(b).forEach(e=>archiveQuestion(e.q,'bookmark'));saveBookmarks({});updateAllBadges();showBookmarkScreen();}
+function practiceFromBookmarks(){practiceFromBank(getBookmarks(),'Bookmark Practice');}
 
-function showSkipScreen(){ const b=getSkips(), items=Object.values(b); document.getElementById('skip-count-lbl').textContent=`${items.length} question${items.length!==1?'s':''}`; document.getElementById('skip-list').innerHTML = items.length ? items.map(e=>bankItemHtml(e,'skip')).join('') : '<div style="padding:30px;text-align:center;color:var(--text3);font-size:0.82rem;">No skipped questions. ✅</div>'; showScreen('skip-screen'); }
-function clearAllSkips(){ if(!confirm('Archive all skips?')) return; const b=getSkips(); Object.values(b).forEach(e=>archiveQuestion(e.q,'skip')); saveSkips({}); updateAllBadges(); showSkipScreen(); }
-function practiceFromSkips(){ practiceFromBank(getSkips(),'Skip Practice'); }
+function showSkipScreen(){const b=getSkips(),items=Object.values(b);document.getElementById('skip-count-lbl').textContent=`${items.length} question${items.length!==1?'s':''}`;document.getElementById('skip-list').innerHTML=items.length?items.map(e=>bankItemHtml(e,'skip')).join(''):'<div style="padding:30px;text-align:center;color:var(--text3);font-size:0.82rem;">No skipped questions. ✅</div>';showScreen('skip-screen');}
+function clearAllSkips(){if(!confirm('Archive all skips?'))return;const b=getSkips();Object.values(b).forEach(e=>archiveQuestion(e.q,'skip'));saveSkips({});updateAllBadges();showSkipScreen();}
+function practiceFromSkips(){practiceFromBank(getSkips(),'Skip Practice');}
 
 function showArchiveScreen(){
-  const arc=getArchive(), items=Object.values(arc).sort((a,b)=>new Date(b.archivedAt)-new Date(a.archivedAt));
-  document.getElementById('archive-count-lbl').textContent = `${items.length} question${items.length!==1?'s':''}`;
-  document.getElementById('archive-list').innerHTML = items.length ? items.map(e=>`<div class="bank-item"><div class="bank-item-top"><span class="bank-tag archive">ARCHIVED</span><span class="from-badge ${e.fromBank}">${e.fromBank.toUpperCase()}</span><span style="font-size:0.6rem;background:var(--gold-dim);color:var(--gold);border:1px solid rgba(201,168,76,0.3);padding:2px 6px;border-radius:3px;font-weight:700;">${e.q.chapter||''}</span><span class="bank-times" style="margin-left:auto;">${new Date(e.archivedAt).toLocaleDateString()}</span></div><div class="bank-q">${e.q.question}</div><div class="bank-ans">✓ ${e.q.correctAnswer}</div></div>`).join('') : '<div style="padding:30px;text-align:center;color:var(--text3);font-size:0.82rem;">Archive is empty. 🏆</div>';
+  const arc=getArchive(),items=Object.values(arc).sort((a,b)=>new Date(b.archivedAt)-new Date(a.archivedAt));
+  document.getElementById('archive-count-lbl').textContent=`${items.length} question${items.length!==1?'s':''}`;
+  document.getElementById('archive-list').innerHTML=items.length?items.map(e=>`<div class="bank-item"><div class="bank-item-top"><span class="bank-tag archive">ARCHIVED</span><span class="from-badge ${e.fromBank}">${e.fromBank.toUpperCase()}</span><span style="font-size:0.6rem;background:var(--gold-dim);color:var(--gold);border:1px solid rgba(201,168,76,0.3);padding:2px 6px;border-radius:3px;font-weight:700;">${e.q.chapter||''}</span><span class="bank-times" style="margin-left:auto;">${new Date(e.archivedAt).toLocaleDateString()}</span></div><div class="bank-q">${e.q.question}</div><div class="bank-ans">✓ ${e.q.correctAnswer}</div></div>`).join(''):'<div style="padding:30px;text-align:center;color:var(--text3);font-size:0.82rem;">Archive is empty. 🏆</div>';
   showScreen('archive-screen');
 }
-function clearAllArchive(){ if(confirm('Permanently delete all archived questions?')){ saveArchive({}); updateAllBadges(); showArchiveScreen(); } }
+function clearAllArchive(){if(confirm('Permanently delete all archived questions?')){saveArchive({});updateAllBadges();showArchiveScreen();}}
 
 // ─── Utilities ────────────────────────────────────────────────────
-function shuffle(arr){ for(let i=arr.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]]; } return arr; }
-function showScreen(id){ document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active')); document.getElementById(id).classList.add('active'); }
-function backToSetup(){ clearInterval(timerInterval); hideConfigPanel(); showScreen('setup-screen'); buildDashboard(); }
-function confirmHome(){ const ans = state.answers?.filter(a=>a!==null).length||0; if (ans>0 && !confirm('Exit quiz? Progress will be lost.')) return; backToSetup(); }
+function shuffle(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}return arr;}
+function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');}
+function backToSetup(){clearInterval(timerInterval);hideConfigPanel();showScreen('setup-screen');buildDashboard();}
+function confirmHome(){const ans=state.answers?.filter(a=>a!==null).length||0;if(ans>0&&!confirm('Exit quiz? Progress will be lost.'))return;backToSetup();}
 
 function buildDashboard(){
-  const h = getHistory(), mistakes = Object.keys(getMistakes()).length;
-  const ta = h.reduce((s,e)=>s+e.correct+e.wrong,0), tc = h.reduce((s,e)=>s+e.correct,0);
-  const acc = ta>0 ? Math.round(tc/ta*100) : 0;
-  document.getElementById('dash-accuracy').textContent = ta>0 ? acc+'%' : '--';
-  document.getElementById('dash-attempted').textContent = ta;
-  document.getElementById('dash-sessions').textContent = h.length;
-  document.getElementById('dash-mistakes').textContent = mistakes;
-  document.getElementById('dash-meta').textContent = h.length ? 'Last: '+new Date(h[0].date).toLocaleDateString() : 'No sessions yet';
+  const h=getHistory(),mistakes=Object.keys(getMistakes()).length;
+  const ta=h.reduce((s,e)=>s+e.correct+e.wrong,0),tc=h.reduce((s,e)=>s+e.correct,0);
+  const acc=ta>0?Math.round(tc/ta*100):0;
+  document.getElementById('dash-accuracy').textContent=ta>0?acc+'%':'--';
+  document.getElementById('dash-attempted').textContent=ta;
+  document.getElementById('dash-sessions').textContent=h.length;
+  document.getElementById('dash-mistakes').textContent=mistakes;
+  document.getElementById('dash-meta').textContent=h.length?'Last: '+new Date(h[0].date).toLocaleDateString():'No sessions yet';
 }
 
-function applyTheme(t){ document.documentElement.setAttribute('data-theme',t); [document.getElementById('theme-btn'), document.getElementById('theme-btn-q')].forEach(btn=>{ if(btn) btn.textContent = t==='light'?'🌙':'☀️'; }); localStorage.setItem('bpsc_theme', t); }
-function toggleTheme(){ const cur = document.documentElement.getAttribute('data-theme')||'dark'; applyTheme(cur==='dark'?'light':'dark'); }
+function applyTheme(t){document.documentElement.setAttribute('data-theme',t);[document.getElementById('theme-btn'),document.getElementById('theme-btn-q')].forEach(btn=>{if(btn)btn.textContent=t==='light'?'🌙':'☀️';});localStorage.setItem('priya_theme',t);}
+function toggleTheme(){const cur=document.documentElement.getAttribute('data-theme')||'dark';applyTheme(cur==='dark'?'light':'dark');}
 
 // Keyboard shortcuts
-document.addEventListener('keydown', function(e){
+document.addEventListener('keydown', function(e) {
   const qs = document.getElementById('quiz-screen');
   if (!qs || !qs.classList.contains('active')) return;
   if (paused) return;
@@ -1352,19 +1322,112 @@ document.addEventListener('keydown', function(e){
   if (e.code === 'Space') {
     e.preventDefault();
     const i = state.current;
-    const keys = (shuffledOptionOrders[i]||Object.keys(quiz[i].options)).filter(k => quiz[i].options[k]);
-    const cur = state.answers[i], idx = keys.indexOf(cur), next = idx+1;
+    const keys = (shuffledOptionOrders[i] || Object.keys(quiz[i].options)).filter(k => quiz[i].options[k]);
+    const cur = state.answers[i], idx = keys.indexOf(cur), next = idx + 1;
     state.answers[i] = next < keys.length ? keys[next] : null;
     renderQuestion(); renderPalette(); updateStats();
   }
-  if (e.code === 'Enter') { e.preventDefault(); if (state.current === quiz.length-1) submitQuiz(); else saveAndNext(); }
+  if (e.code === 'Enter') { e.preventDefault(); if (state.current === quiz.length - 1) submitQuiz(); else saveAndNext(); }
   if (e.code === 'KeyB') { e.preventDefault(); toggleBookmark(); }
   if (e.code === 'KeyP') { e.preventDefault(); goToPrev(); }
 });
 
+// ════════════════════════════════════════════════════════════════
+// FIREBASE CLOUD SYNC LAYER (identical to index.html)
+// ════════════════════════════════════════════════════════════════
+const SYNC_DATA_KEYS = ['priya_mistakes','priya_bookmarks','priya_skips','priya_history','priya_archive'];
+const FIREBASE_CFG = {
+  apiKey: "AIzaSyB5vVuyG2NbMdTUOY78NlZ702mlkmmPuFA",
+  authDomain: "mcq-practise-ff181.firebaseapp.com",
+  projectId: "mcq-practise-ff181"
+};
+let fbDb=null,fbAuth=null,fbUserId=null,syncListeners=[],syncStatus='offline';
+function getSyncConfig(){ return LS.get('priya_sync_cfg', null); }
+function saveSyncConfig(c){ LS.set('priya_sync_cfg', c); }
+function setSyncStatus(s){ syncStatus=s; const dot=document.getElementById('sync-status-dot'); if(!dot)return; dot.className='sync-dot '+s; const labels={synced:'Synced ✔',syncing:'Syncing…',error:'Sync Error ⚠',offline:'Sync Off'}; dot.title=labels[s]||s; }
+function loadScript(src){ return new Promise((res,rej)=>{if(document.querySelector('script[src="'+src+'"]')){res();return;}const s=document.createElement('script');s.src=src;s.onload=res;s.onerror=rej;document.head.appendChild(s);}); }
+async function ensureFirebaseSDK(){ if(window.firebase&&window.firebase.auth)return true; try{await loadScript('https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js');await loadScript('https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js');await loadScript('https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js');return true;}catch(e){return false;} }
+async function initFirebase(){ const ok=await ensureFirebaseSDK();if(!ok)return false;try{const existing=window.firebase.apps.find(a=>a.name==='bpsc');if(existing)await existing.delete();const app=window.firebase.initializeApp(FIREBASE_CFG,'bpsc');fbDb=window.firebase.firestore(app);fbAuth=window.firebase.auth(app);return true;}catch(e){return false;} }
+async function signInWithGoogle(){ const btn=document.getElementById('google-signin-btn');if(btn){btn.disabled=true;btn.style.opacity='0.7';}showSyncModalStatus('Opening Google sign-in…','info');const ok=await initFirebase();if(!ok){showSyncModalStatus('Firebase init failed.','err');if(btn){btn.disabled=false;btn.style.opacity='1';}return;}try{const provider=new window.firebase.auth.GoogleAuthProvider();const result=await fbAuth.signInWithPopup(provider);const user=result.user;fbUserId=user.uid;const cfg={userId:user.uid,email:user.email,name:user.displayName,photo:user.photoURL};saveSyncConfig(cfg);showSignedInUI(cfg);setSyncStatus('syncing');await pushAllToCloud();setupRealtimeListeners();setSyncStatus('synced');updateSyncNavBtn(true);showSyncToast('Signed in as '+user.displayName);setTimeout(()=>closeSyncModal(),1500);}catch(e){showSyncModalStatus('Sign-in failed: '+e.message,'err');if(btn){btn.disabled=false;btn.style.opacity='1';}} }
+function showSignedInUI(cfg){ const vs=document.getElementById('sync-view-signin');const vc=document.getElementById('sync-view-connected');if(vs)vs.style.display='none';if(vc)vc.style.display='';document.getElementById('sync-disconnect-btn').style.display='';if(cfg.name){const el=document.getElementById('sync-user-name');if(el)el.textContent=cfg.name;}if(cfg.email){const el=document.getElementById('sync-user-email');if(el)el.textContent=cfg.email;}if(cfg.photo){const img=document.getElementById('sync-user-photo');if(img){img.src=cfg.photo;img.style.display='';}} }
+async function pushAllToCloud(){ if(!fbDb||!fbUserId)return;setSyncStatus('syncing');try{const batch=fbDb.batch();SYNC_DATA_KEYS.forEach(k=>{const ref=fbDb.collection('users').doc(fbUserId).collection('data').doc(k);batch.set(ref,{payload:JSON.stringify(LS.get(k,{})),updatedAt:Date.now()});});await batch.commit();setSyncStatus('synced');}catch(e){setSyncStatus('error');} }
+async function pullFromCloud(force){ if(!fbDb||!fbUserId)return;try{const snap=await fbDb.collection('users').doc(fbUserId).collection('data').get();snap.forEach(doc=>{const data=doc.data();if(!data||!data.payload)return;const key=doc.id;if(!SYNC_DATA_KEYS.includes(key))return;const cloudVal=JSON.parse(data.payload);if(force){LS.set(key,cloudVal);}else{const local=LS.get(key,{});if(Array.isArray(cloudVal)){const all=[...(Array.isArray(local)?local:[]),...cloudVal];const seen=new Set();const merged=all.filter(e=>{const k=e.date;if(seen.has(k))return false;seen.add(k);return true;});merged.sort((a,b)=>new Date(b.date)-new Date(a.date));LS.set(key,merged.slice(0,200));}else{LS.set(key,Object.assign({},local,cloudVal));}}});updateAllBadges();buildDashboard();setSyncStatus('synced');const bar=document.getElementById('sync-pull-bar');if(bar)bar.classList.remove('show');if(force)showSyncToast('✔ Cloud data pulled successfully');}catch(e){setSyncStatus('error');} }
+function setupRealtimeListeners(){ syncListeners.forEach(u=>u());syncListeners=[];if(!fbDb||!fbUserId)return;SYNC_DATA_KEYS.forEach(k=>{const ref=fbDb.collection('users').doc(fbUserId).collection('data').doc(k);const unsub=ref.onSnapshot(doc=>{if(!doc.exists)return;const meta=doc.metadata;if(meta&&meta.hasPendingWrites)return;try{const data=doc.data();if(!data||!data.payload)return;const cloudVal=JSON.parse(data.payload);const local=LS.get(k,{});if(JSON.stringify(local)===JSON.stringify(cloudVal))return;if(Array.isArray(cloudVal)){const all=[...(Array.isArray(local)?local:[]),...cloudVal];const seen=new Set();const merged=all.filter(e=>{const id=e.date;if(seen.has(id))return false;seen.add(id);return true;});merged.sort((a,b)=>new Date(b.date)-new Date(a.date));LS.set(k,merged.slice(0,200));}else{LS.set(k,Object.assign({},local,cloudVal));}updateAllBadges();buildDashboard();showSyncToast('☁ Synced from another device');setSyncStatus('synced');}catch(e){}},err=>{setSyncStatus('error');});syncListeners.push(unsub);}); }
+const _pushTimers={};
+function cloudPushKey(k){ if(!fbDb||!fbUserId)return;clearTimeout(_pushTimers[k]);_pushTimers[k]=setTimeout(async()=>{setSyncStatus('syncing');try{await fbDb.collection('users').doc(fbUserId).collection('data').doc(k).set({payload:JSON.stringify(LS.get(k,{})),updatedAt:Date.now()});setSyncStatus('synced');}catch(e){setSyncStatus('error');}},600); }
+const _saveHistory0=saveHistory,_saveMistakes0=saveMistakes,_saveBookmarks0=saveBookmarks,_saveSkips0=saveSkips,_saveArchive0=saveArchive;
+saveHistory  =(h)=>{_saveHistory0(h);  cloudPushKey('priya_history');};
+saveMistakes =(m)=>{_saveMistakes0(m); cloudPushKey('priya_mistakes');};
+saveBookmarks=(b)=>{_saveBookmarks0(b);cloudPushKey('priya_bookmarks');};
+saveSkips    =(s)=>{_saveSkips0(s);    cloudPushKey('priya_skips');};
+saveArchive  =(a)=>{_saveArchive0(a);  cloudPushKey('priya_archive');};
+async function disconnectSync(){ if(!confirm('Sign out from cloud sync? Your local data will stay.'))return;syncListeners.forEach(u=>u());syncListeners=[];if(fbAuth)try{await fbAuth.signOut();}catch(e){}fbDb=null;fbAuth=null;fbUserId=null;localStorage.removeItem('priya_sync_cfg');setSyncStatus('offline');updateSyncNavBtn(false);closeSyncModal();showSyncToast('Signed out from cloud sync'); }
+function showSyncModalStatus(msg,type){ const el=document.getElementById('sync-modal-status');if(!el)return;el.textContent=msg;el.className='modal-status show '+type; }
+function openSyncModal() { 
+  const modal = document.getElementById('sync-modal');
+  if (!modal) return;
+  
+  // Build sync config UI
+  const vs = document.getElementById('sync-view-signin');
+  if (vs) {
+    vs.innerHTML = `
+      <div class="modal-desc">Sync your progress across devices using a simple configuration.</div>
+      <div style="display:flex;flex-direction:column;gap:12px;margin:16px 0;">
+        <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:0.9rem;">
+          <input type="checkbox" id="sync-enable-check" ${SYNC_CONFIG.enabled ? 'checked' : ''} onchange="toggleSync(this.checked)" style="width:18px;height:18px;cursor:pointer;min-width:18px;">
+          <span>Enable Cloud Sync</span>
+        </label>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <label style="font-size:0.85rem;color:var(--text2);">API Endpoint (optional)</label>
+          <input type="text" id="sync-endpoint-input" placeholder="https://api.example.com/sync" value="${SYNC_CONFIG.endpoint}" style="padding:8px 10px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:0.85rem;font-family:'DM Sans',sans-serif;" onchange="updateSyncEndpoint(this.value)">
+          <div style="font-size:0.75rem;color:var(--text3);">Leave empty for local-only sync</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <label style="font-size:0.85rem;color:var(--text2);">Device ID</label>
+          <div style="padding:8px 10px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;color:var(--text3);font-size:0.8rem;font-family:'JetBrains Mono',monospace;word-break:break-all;">${SYNC_CONFIG.deviceId}</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:16px;">
+        <button onclick="pullDataFromCloud()" style="flex:1;padding:10px;background:var(--blue-dim);border:1px solid var(--blue);color:var(--blue);border-radius:6px;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;">⬇️ Sync Now</button>
+        <button onclick="clearSyncData()" style="flex:1;padding:10px;background:var(--red-dim);border:1px solid var(--red);color:var(--red);border-radius:6px;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;">🗑 Clear Cache</button>
+      </div>
+      <div class="modal-status" id="sync-modal-status"></div>
+    `;
+  }
+  
+  modal.classList.remove('hidden');
+}
+
+function toggleSync(enabled) {
+  SYNC_CONFIG.enabled = enabled;
+  localStorage.setItem('priya_sync_enabled', enabled);
+  if (enabled) {
+    updateSyncStatus('syncing');
+    pullDataFromCloud();
+  } else {
+    updateSyncStatus('offline');
+  }
+}
+
+function updateSyncEndpoint(endpoint) {
+  SYNC_CONFIG.endpoint = endpoint;
+  localStorage.setItem('priya_sync_endpoint', endpoint);
+}
+
+function clearSyncData() {
+  if (confirm('Clear sync cache? This will only affect this device.')) {
+    indexedDB.deleteDatabase('PriyaTestSeries');
+    showSyncToast('Cache cleared ✓');
+  }
+}
+function closeSyncModal(){ document.getElementById('sync-modal').classList.add('hidden'); }
+function showSyncToast(msg){ const t=document.getElementById('sync-toast');if(!t)return;t.textContent=msg;t.style.opacity='1';clearTimeout(t._to);t._to=setTimeout(()=>{t.style.opacity='0';},2800); }
+function updateSyncNavBtn(connected){ const btn=document.getElementById('sync-nav-btn');if(!btn)return;btn.innerHTML=connected?'☁ <span class="nav-btn-label">Synced</span><div class="sync-dot synced" id="sync-status-dot" title="Synced ✔"></div>':'☁ <span class="nav-btn-label">Sync</span><div class="sync-dot offline" id="sync-status-dot" title="Sync Off"></div>'; }
+async function initSyncOnLoad(){ const cfg=getSyncConfig();if(!cfg||!cfg.userId)return;updateSyncNavBtn(false);setSyncStatus('syncing');const ok=await initFirebase();if(!ok){setSyncStatus('error');return;}fbAuth.onAuthStateChanged(async(user)=>{if(user){fbUserId=user.uid;await pullFromCloud(false);setupRealtimeListeners();setSyncStatus('synced');updateSyncNavBtn(true);}else{setSyncStatus('offline');updateSyncNavBtn(false);}}); }
+
 // ─── Init ─────────────────────────────────────────────────────────
 function init(){
-  const saved = localStorage.getItem('bpsc_theme') || 'dark';
+  const saved = localStorage.getItem('priya_theme') || 'dark';
   applyTheme(saved);
   buildSubjectsGrid();
   buildDashboard();
